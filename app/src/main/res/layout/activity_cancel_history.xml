@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CancelHistoryActivity"
+    android:background="@color/mainaccent">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainprimary"
+        android:elevation="20dp">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="14dp"
+            android:src="@drawable/beckbtn3" />
+
+        <TextView
+            android:id="@+id/txtOrderSummaryDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Cancelled History"
+            android:textColor="@color/mainaccent"
+            android:fontFamily="@font/jakarta"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/cancelRecyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"/>
+
+
+</RelativeLayout>

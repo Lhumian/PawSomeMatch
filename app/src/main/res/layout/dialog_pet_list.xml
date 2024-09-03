@@ -1,0 +1,39 @@
+<!-- custom_list_item.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:padding="8dp"
+        android:hint="bayot"
+        android:background="@color/mainprimary"/>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/mainaccent"
+        android:padding="8dp"
+        android:hint="bayot"
+        android:background="@color/mainprimary"/>
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/mainsecondary"
+        android:padding="8dp"
+        android:hint="bayot"
+        android:background="@color/red_400"/>
+</LinearLayout>

@@ -1,0 +1,232 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainaccent"
+    android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="2"
+            android:background="@color/mainprimary">
+
+            <RelativeLayout
+                android:id="@+id/pref"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/mainaccent">
+
+                <ImageView
+                    android:id="@+id/backBtn"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/back_button"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"
+                    />
+
+                <TextView
+                    android:id="@+id/finddd"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="12dp"
+                    android:text="Match"
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/jakarta"
+                    android:textStyle="bold" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/imgPhoto"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/catsec"
+                    android:layout_marginTop="24dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/finddd"/>
+
+                <TextView
+                    android:id="@+id/petname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/imgPhoto"
+                    android:text="Turagsoy"
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/jakarta"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/petbname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_below="@+id/petname"
+                    android:text="Siamese"
+                    android:layout_marginTop="8dp"
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/jakarta" />
+            </RelativeLayout>
+        </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@drawable/matchingbg">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/preference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/preference"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="15dp"/>
+
+
+            <TextView
+                android:id="@+id/species_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_below="@+id/preference"
+                android:layout_marginTop="12dp"
+                android:text="Species"
+                android:fontFamily="@font/jakarta"
+                android:textColor="@color/mainaccent"
+                android:layout_centerHorizontal="true"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/species_spinner"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/species_textview"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginLeft="40dp"
+                android:layout_marginRight="40dp"
+                android:background="@drawable/style_spinner1"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/breed_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/species_spinner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="Breed"
+                android:textColor="@color/mainaccent"
+                android:textSize="14sp"
+                android:fontFamily="@font/jakarta"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/breed_spinner"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/breed_textview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/style_spinner1" />
+
+            <TextView
+                android:id="@+id/gender_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/breed_spinner"
+                android:text="Gender"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:textColor="@color/mainaccent"
+                android:textSize="14sp"
+                android:fontFamily="@font/jakarta"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/gender_spinner"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gender_textview"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/style_spinner1"
+                android:entries="@array/gender" />
+
+            <TextView
+                android:id="@+id/breedtype_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/gender_spinner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="Breed Type"
+                android:textColor="@color/mainaccent"
+                android:textSize="14sp"
+                android:fontFamily="@font/jakarta"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/breedtype_spinner"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/breedtype_textview"
+                android:background="@drawable/style_spinner1"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:entries="@array/purity" />
+
+            <TextView
+                android:id="@+id/color_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/breedtype_spinner"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"
+                android:text="Select Color:"
+                android:textColor="@color/mainaccent"
+                android:textSize="14sp"
+                android:fontFamily="@font/jakarta"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/color_spinner"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/color_textview"
+                android:background="@drawable/style_spinner1"
+                android:layout_marginTop="8dp"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/match_button"
+                android:layout_width="170dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/color_spinner"
+                android:layout_marginTop="20dp"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/button_bg"
+                android:text="Find Matches"
+                android:textColor="@color/mainaccent"
+                android:textSize="12sp"
+                android:fontFamily="@font/jakarta"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</LinearLayout>

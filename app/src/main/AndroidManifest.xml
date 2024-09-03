@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.petopia.loginsignup">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-feature android:name="android.hardware.camera" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ReviewListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ReviewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CompletedTransactionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditShares"
+            android:exported="false" />
+        <activity
+            android:name=".EditStudFee"
+            android:exported="false" />
+        <activity
+            android:name=".MatchesList"
+            android:exported="false" />
+        <activity
+            android:name=".SellerPaymentTransactions"
+            android:exported="false" />
+        <activity
+            android:name=".GcashPaymentActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewAddressGcashManualActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddressGcashManualActivity"
+            android:exported="false" />
+        <activity
+            android:name=".GCashManualActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChangePasswordActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ForgotPassEmail"
+            android:exported="false" />
+        <activity
+            android:name=".NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".qRabbit"
+            android:exported="false" />
+        <activity
+            android:name=".qHamster"
+            android:exported="false" />
+        <activity
+            android:name=".qDog"
+            android:exported="false" />
+        <activity
+            android:name=".qCat"
+            android:exported="false" />
+        <activity
+            android:name=".rabbit"
+            android:exported="false" />
+        <activity
+            android:name=".hamster"
+            android:exported="false" />
+        <activity
+            android:name=".cat"
+            android:exported="false" />
+        <activity
+            android:name=".dog"
+            android:exported="false" />
+        <activity
+            android:name=".EmailVerificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CancelHistoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CancelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryBrowsePet"
+            android:exported="false" />
+        <activity
+            android:name=".CategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewAddressGcashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewAddressCheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PetViewActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ParentBreedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderSummaryGcash"
+            android:exported="false" />
+        <activity
+            android:name=".AddressGcashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddressCheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BirthResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CheckoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryGcashActivity"
+            android:exported="false" />
+        <activity
+            android:name=".UpdateProgressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SaleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PetDescription"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".OrderActivity"
+            android:exported="false" />
+        <activity
+            android:name=".OrderSummaryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".NewAddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".AddressActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DeliveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".BirthActivity"
+            android:exported="false" />
+        <activity
+            android:name=".StatusActivity"
+            android:exported="false" />
+        <activity
+            android:name=".EditUserProfile"
+            android:exported="false" />
+        <activity
+            android:name=".Settings"
+            android:exported="false" />
+        <activity
+            android:name=".settings.About"
+            android:exported="false" />
+        <activity
+            android:name=".settings.TAC"
+            android:exported="false" />
+        <activity
+            android:name=".settings.PlatformRules"
+            android:exported="false" />
+        <activity
+            android:name=".settings.FAQ"
+            android:exported="false" />
+        <activity
+            android:name=".settings.ChPassword"
+            android:exported="false" />
+        <activity
+            android:name=".settings.PersonalInfo"
+            android:exported="false" />
+        <activity
+            android:name=".BreedActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PaymentWebView"
+            android:exported="false" />
+        <activity
+            android:name=".ResultActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TestActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PayConfirmation"
+            android:exported="false" />
+
+        <service android:name=".PaymentService" />
+
+        <activity
+            android:name=".Matching"
+            android:exported="false" />
+        <activity
+            android:name=".BrowsePet"
+            android:exported="false" />
+        <activity
+            android:name=".AcceptanceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ChatActivity"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".MatchingResult"
+            android:exported="false" />
+        <activity
+            android:name=".PetDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PetRegister"
+            android:exported="false" />
+        <activity
+            android:name=".Profile"
+            android:exported="false" />
+        <activity
+            android:name=".PetSelling"
+            android:exported="false" />
+        <activity
+            android:name=".AddPost"
+            android:exported="false" />
+        <activity
+            android:name=".Match"
+            android:exported="false" />
+        <activity android:name=".MainActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".SignupActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".HomeActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".Messaging"
+            android:screenOrientation="portrait" />
+    </application>
+
+</manifest>

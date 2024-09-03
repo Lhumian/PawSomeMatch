@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainaccent"
+    tools:context="com.petopia.loginsignup.HomeActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainprimary">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/notification"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/hnotif"
+                android:layout_centerVertical="true"
+                android:elevation="20dp"
+                android:padding="14dp"/>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/acceptance"
+                android:layout_toLeftOf="@id/notification"
+                android:src="@drawable/heart"
+                android:layout_centerVertical="true"
+                android:elevation="20dp"
+                android:padding="14dp">
+            </ImageView>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:id="@+id/noNotificationTextView"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/heart"
+                android:layout_centerVertical="true"
+                android:elevation="20dp"
+                android:padding="14dp"
+                android:visibility="gone">
+
+            </ImageView>
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/set"
+                android:id="@+id/settings"
+                android:layout_centerVertical="true"
+                android:padding="14dp">
+            </ImageView>
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:fontFamily="@font/jakarta"
+                android:text="dashboard"
+                android:textColor="@color/mainaccent"
+                android:textSize="18dp"></TextView>
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/emailTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <TextView
+                android:id="@+id/greeting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hello!"
+                android:textSize="24dp"
+                android:fontFamily="@font/jakarta"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="14dp"
+                android:textStyle="bold"/>
+
+
+            <TextView
+                android:id="@+id/nameTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:textSize="24dp"
+                android:fontFamily="@font/jakarta"
+                android:textStyle="bold"
+                android:layout_toRightOf="@+id/greeting"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="14dp"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="!"
+                android:visibility="invisible"
+                android:textSize="24dp"
+                android:fontFamily="@font/jakarta"
+                android:textStyle="bold"
+                android:layout_marginLeft="1dp"
+                android:layout_toRightOf="@+id/nameTv"
+                android:layout_marginTop="14dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout111"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="24dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tailor your pet's experience!"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:fontFamily="@font/jakarta" />
+        </RelativeLayout>
+
+        <HorizontalScrollView
+            android:id="@+id/layout101"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout111">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:id="@+id/btnAddPet"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="24dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/fpet">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/btnBrowsePet"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/fpet1"
+                    android:layout_centerVertical="true">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/btnSellPet"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/fpet2"
+                    android:layout_centerVertical="true">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/btnPurchases"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/fpet4"
+                    android:layout_centerVertical="true">
+                </ImageView>
+
+                <ImageView
+                    android:id="@+id/btnSales"
+                    android:layout_width="170dp"
+                    android:layout_height="170dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="12dp"
+                    android:src="@drawable/fpet5"
+                    android:layout_centerVertical="true">
+                </ImageView>
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_below="@+id/layout101">
+
+            <TextView
+                android:id="@+id/petcat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Pet Breeds"
+                android:textSize="18dp"
+                android:fontFamily="@font/jakarta"
+                android:textStyle="bold"
+                android:layout_marginLeft="24dp"/>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout02"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout2">
+
+            <ImageView
+                android:id="@+id/dogBtn"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/dogact"
+                android:layout_centerVertical="true">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/catBtn"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:layout_marginTop="12dp"
+
+                android:src="@drawable/catact"
+                android:layout_centerVertical="true">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/rabbitBtn"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:layout_marginTop="12dp"
+                android:src="@drawable/rabbitact"
+                android:layout_centerVertical="true">
+            </ImageView>
+
+            <ImageView
+                android:id="@+id/hamsterBtn"
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:layout_weight="1"
+                android:layout_marginTop="12dp"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/hamsteract"
+                android:layout_centerVertical="true">
+            </ImageView>
+        </LinearLayout>
+
+
+
+
+        <RelativeLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout02"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:fontFamily="@font/jakarta"
+                android:text="Pet Overview"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout6"
+            android:layout_width="match_parent"
+            android:layout_height="270dp"
+            android:layout_below="@+id/layout5">
+
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/learn"
+                android:layout_width="match_parent"
+                android:layout_height="320dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout5">
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/userIdTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:textSize="18sp"
+            android:visibility="invisible" />
+
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="@color/mainaccent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:background="@color/mainaccent"
+        >
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/notification"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/heart"
+            android:layout_centerVertical="true"
+            android:elevation="20dp">
+        </ImageView>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/settings"
+            android:id="@+id/settings"
+            android:layout_centerVertical="true">
+        </ImageView>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="dashboard"
+            android:textColor="@color/mainsecondary"
+            android:textSize="18dp"
+            android:fontFamily="@font/jakarta"></TextView>
+
+
+    </RelativeLayout>
+</RelativeLayout>

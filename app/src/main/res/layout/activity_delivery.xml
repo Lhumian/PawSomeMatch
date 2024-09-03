@@ -1,0 +1,391 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DeliveryActivity"
+    android:background="@color/mainsecondary">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainaccent"
+            >
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/beckbtn4"
+                android:padding="14dp" />
+
+            <TextView
+                android:id="@+id/txtOrderSummaryDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="14dp"
+                android:text="Checkout"
+                android:textColor="@color/mainsecondary"
+                android:textSize="24sp"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout1"
+            android:background="@color/mainprimary"
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:id="@+id/map"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/map"
+                />
+
+            <TextView
+                android:id="@+id/selectedAddressTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/map"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginBottom="12dp"
+                android:text="Delivery Address"
+                android:textColor="@color/mainaccent"/>
+
+            <ImageView
+                android:id="@+id/btnAddress"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:src="@drawable/right"
+                android:textColor="@color/mainaccent"
+                android:layout_alignParentRight="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout00"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:layout_below="@+id/layout2"
+            android:background="@color/mainaccent">
+
+            <ImageView
+                android:id="@+id/sellericon"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/sellericon"
+                android:layout_marginLeft="12dp"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:id="@+id/txtSellerDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_toRightOf="@+id/sellericon"
+                android:text="Seller:"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/jakarta"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/txtSeller"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_toRightOf="@+id/sellericon"
+                android:layout_marginTop="12dp"
+                android:text="Seller"
+                android:textStyle="bold"
+                android:fontFamily="@font/jakarta"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout00"
+            android:background="@color/mainaccent"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/txtPetDetails"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="12dp"
+                android:text="Pet Details"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:textColor="@color/mainprimary"
+                android:fontFamily="@font/jakarta"/>
+
+            <TextView
+                android:id="@+id/txtPetNameDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtPetDetails"
+                android:layout_below="@+id/txtPetDetails"
+                android:layout_marginTop="12dp"
+                android:text="Pet Name:"
+                android:fontFamily="@font/jakarta"/>
+
+            <TextView
+                android:id="@+id/txtPetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPetNameDisplay"
+                android:layout_alignStart="@+id/txtPetNameDisplay"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:text="Pet Name"
+                android:textStyle="bold"
+                android:fontFamily="@font/jakarta"/>
+
+            <TextView
+                android:id="@+id/txtPetCategoryDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtPetNameDisplay"
+                android:layout_below="@+id/txtPetName"
+                android:layout_marginTop="12dp"
+                android:text="Pet Category:"
+                android:fontFamily="@font/jakarta"/>
+
+            <TextView
+                android:id="@+id/txtPetCategory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet Category"
+                android:layout_below="@+id/txtPetCategoryDisplay"
+                android:layout_alignStart="@+id/txtPetNameDisplay"
+                android:textStyle="bold"
+                android:textSize="16dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/jakarta"/>
+
+            <TextView
+                android:id="@+id/txtPetBreedDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtPetCategoryDisplay"
+                android:layout_below="@+id/txtPetCategory"
+                android:layout_marginTop="12dp"
+                android:text="Pet Breed:"
+                android:fontFamily="@font/jakarta"/>
+
+            <TextView
+                android:id="@+id/txtPetBreed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtPetBreedDisplay"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:layout_alignStart="@+id/txtPetCategoryDisplay"
+                android:textStyle="bold"
+                android:text="Pet Breed"
+                android:fontFamily="@font/jakarta"/>
+
+            <TextView
+                android:id="@+id/txtPetColorDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtPetBreedDisplay"
+                android:layout_below="@+id/txtPetBreed"
+                android:layout_marginTop="12dp"
+                android:text="Pet Color:"
+                android:fontFamily="@font/jakarta"/>
+
+
+            <TextView
+                android:id="@+id/txtPetColor"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtPetColorDisplay"
+                android:layout_marginBottom="12dp"
+                android:layout_marginTop="5dp"
+                android:textSize="16dp"
+                android:fontFamily="@font/jakarta"
+                android:layout_below="@+id/txtPetColorDisplay"
+                android:text="Pet Color"
+                android:textStyle="bold" />
+
+
+
+        </RelativeLayout>
+
+
+
+        <RelativeLayout
+            android:id="@+id/layout4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout3"
+            android:background="@color/mainaccent"
+            android:layout_marginTop="2dp">
+
+            <ImageView
+                android:id="@+id/payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/payment"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="12dp"/>
+
+            <TextView
+                android:id="@+id/txtPayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/payment"
+                android:text="Payment Details"
+                android:textSize="22dp"
+                android:textColor="@color/mainprimary"
+                android:textStyle="bold"
+                android:fontFamily="@font/jakarta"/>
+
+            <TextView
+                android:id="@+id/txtPriceDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/txtPayment"
+                android:layout_below="@+id/txtPayment"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Pet Price:"
+                android:fontFamily="@font/jakarta"/>
+
+
+            <TextView
+                android:id="@+id/txtPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="20dp"
+                android:layout_below="@+id/txtPayment"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Price"
+                android:fontFamily="@font/jakarta"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout4"
+            android:background="@color/mainaccent"
+            android:layout_marginTop="2dp">
+
+
+            <ImageView
+                android:id="@+id/shield"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/shield"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="12dp">
+            </ImageView>
+
+
+            <TextView
+                android:id="@+id/txtPaymentMethodDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginLeft="12dp"
+                android:layout_toRightOf="@+id/shield"
+                android:text="Payment Method"
+                android:textSize="22dp"
+                android:textColor="@color/mainprimary"
+                android:textStyle="bold"
+                android:fontFamily="@font/jakarta"/>
+
+            <TextView
+                android:id="@+id/txtPaymentMethod"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginBottom="24dp"
+                android:layout_toRightOf="@+id/shield"
+                android:layout_below="@+id/txtPaymentMethodDisplay"
+                android:layout_marginTop="5dp"
+                android:text="Cash on Delivery"
+                android:fontFamily="@font/jakarta"/>
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:background="@color/mainaccent"
+            android:layout_below="@+id/layout8"
+            android:layout_marginTop="2dp">
+
+            <TextView
+                android:id="@+id/txtTotalDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mainprimary"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:text="Total Payment:"
+                android:textSize="12dp"
+                android:fontFamily="@font/jakarta"/>
+
+            <TextView
+                android:id="@+id/txtTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtTotalDisplay"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Total"
+                android:textSize="12dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/jakarta"/>
+
+            <Button
+                android:id="@+id/btnCheckout"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="Place Order"
+                android:textColor="@color/mainaccent"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:textSize="12dp"
+                android:background="@color/mainprimary"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</ScrollView>

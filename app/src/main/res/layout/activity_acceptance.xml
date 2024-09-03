@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.petopia.loginsignup.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/layout01"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainprimary">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/beckbtn3"
+            android:padding="14dp" />
+
+        <TextView
+            android:id="@+id/txtOrderSummaryDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:text="Pet Acceptance"
+            android:textColor="@color/mainaccent"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/jakarta"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/userListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:layout_below="@+id/layout01"/>
+
+    <TextView
+        android:id="@+id/noNotificationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NO NOTIFICATION FOUND"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:layout_centerInParent="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

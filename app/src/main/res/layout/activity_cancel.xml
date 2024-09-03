@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CancelActivity"
+    android:background="@color/mainaccent">
+
+    <TextView
+        android:id="@+id/tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Why do you want to cancel your order?"
+        android:textColor="@color/mainprimary"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:fontFamily="@font/jakarta"
+        android:layout_below="@+id/layout1"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp">
+
+    </TextView>
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainprimary"
+        android:layout_marginBottom="1dp">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/beckbtn3"
+            android:padding="14dp" />
+
+        <TextView
+            android:id="@+id/txtOrderSummaryDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:text="Cancel Order"
+            android:textColor="@color/mainaccent"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textStyle="bold"
+            />
+
+    </RelativeLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv"
+        android:layout_marginLeft="12dp"
+        android:orientation="vertical">
+
+        <RadioButton
+            android:id="@+id/radioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Changed my mind"
+            android:textColor="@color/mainprimary"
+            android:fontFamily="@font/jakarta"
+            android:layout_marginTop="12dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choosing other breed"
+            android:textColor="@color/mainprimary"
+            android:fontFamily="@font/jakarta"
+            android:layout_marginTop="5dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Choosing other color"
+            android:textColor="@color/mainprimary"
+            android:fontFamily="@font/jakarta"
+            android:layout_marginTop="5dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Misclicked"
+            android:textColor="@color/mainprimary"
+            android:fontFamily="@font/jakarta"
+            android:layout_marginTop="5dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Found cheaper pet"
+            android:textColor="@color/mainprimary"
+            android:fontFamily="@font/jakarta"
+            android:layout_marginTop="5dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Don't want to buy anymore"
+            android:textColor="@color/mainprimary"
+            android:fontFamily="@font/jakarta"
+            android:layout_marginTop="5dp"/>
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Others"
+            android:textColor="@color/mainprimary"
+            android:fontFamily="@font/jakarta"
+            android:layout_marginTop="5dp"/>
+    </RadioGroup>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnConfirm"
+        android:layout_below="@+id/radioGroup"
+        android:text="Confirm"
+        android:textColor="@color/mainaccent"
+        android:fontFamily="@font/jakarta"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_bg">
+
+    </Button>
+</RelativeLayout>

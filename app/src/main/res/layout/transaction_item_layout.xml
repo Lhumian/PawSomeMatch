@@ -1,0 +1,63 @@
+<!-- your_transaction_item_layout.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/petIdTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pet ID: "
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/petNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/petIdTextView"
+        android:layout_marginTop="8dp"
+        android:text="Pet Name: "/>
+
+    <TextView
+        android:id="@+id/sellerTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/petNameTextView"
+        android:layout_marginTop="8dp"
+        android:text="Seller: "/>
+
+    <TextView
+        android:id="@+id/referenceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sellerTextView"
+        android:layout_marginTop="8dp"
+        android:text="Reference: "/>
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/referenceTextView"
+        android:layout_marginTop="8dp"
+        android:text="Price: "/>
+
+    <TextView
+        android:id="@+id/orderDateTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/priceTextView"
+        android:layout_marginTop="8dp"
+        android:text="Order Date: "/>
+
+    <!-- Add a Button for the review -->
+    <Button
+        android:id="@+id/reviewButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/orderDateTextView"
+        android:layout_marginTop="16dp"
+        android:text="Add Review"/>
+</RelativeLayout>

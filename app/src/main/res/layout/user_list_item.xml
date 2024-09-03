@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mainaccent"
+    android:layout_marginBottom="1dp"
+    android:elevation="5dp">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/userPhotoImageView"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_centerVertical="true"
+        android:padding="8dp"
+        android:src="@drawable/pawsomelogo" />
+
+    <TextView
+        android:id="@+id/userNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="12dp"
+        android:text="username"
+        android:textColor="@color/mainsecondary"
+        android:fontFamily="@font/jakarta"
+        android:textSize="14dp"
+        android:layout_toRightOf="@id/userPhotoImageView" />
+
+    <TextView
+        android:id="@+id/liked_pet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/userNameTextView"
+        android:layout_toRightOf="@id/userPhotoImageView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:text="Liked your pet:"
+        android:fontFamily="@font/jakarta"
+        android:textColor="@color/mainsecondary"
+        android:textSize="10dp"/>
+    <TextView
+        android:id="@+id/petNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/liked_pet"
+        android:text="petname"
+        android:layout_toRightOf="@id/userPhotoImageView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/mainsecondary"
+        android:fontFamily="@font/jakarta"
+        android:textSize="10dp"
+        android:textStyle="bold"/>
+
+    <RelativeLayout
+        android:id="@+id/acceptButton"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/declineButton"
+        android:background="@color/green_100">
+
+        <ImageView
+            android:id="@+id/acc"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:fontFamily="@font/jakarta"
+            android:background="@drawable/acc"
+            android:textColor="@color/mainsecondary"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="20dp"/>
+
+        <TextView
+            android:id="@+id/ac"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/acc"
+            android:text="accept"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/mainsecondary"
+            android:fontFamily="@font/jakarta"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/declineButton"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:background="@color/red_100">
+
+        <ImageView
+            android:id="@+id/deec"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/den"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="20dp"
+            />
+
+        <TextView
+            android:id="@+id/dee"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/deec"
+            android:text="decline"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/mainsecondary"
+            android:fontFamily="@font/jakarta"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btnView"
+        android:layout_width="50dp"
+        android:layout_height="match_parent"
+        android:layout_toLeftOf="@+id/acceptButton"
+        android:background="@color/light_blue_100">
+
+        <ImageView
+            android:id="@+id/vie"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/det"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:elevation="20dp"/>
+
+        <TextView
+            android:id="@+id/vi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/vie"
+            android:text="view"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/mainsecondary"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/jakarta"
+            android:textSize="12sp"
+            android:textStyle="bold"/>
+    </RelativeLayout>
+
+</RelativeLayout>

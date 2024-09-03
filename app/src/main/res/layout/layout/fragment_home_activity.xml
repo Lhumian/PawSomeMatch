@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainaccent"
+    tools:context="com.petopia.loginsignup.HomeActivity">
+    <include layout="@layout/toolbarv2"/>
+
+    <TextView
+        android:id="@+id/emailTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Email"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp">
+
+        <TextView
+            android:id="@+id/greeting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hello"
+            android:textSize="24dp"
+            android:fontFamily="@font/jakarta"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="14dp"/>
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User"
+            android:textSize="24dp"
+            android:fontFamily="@font/jakarta"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/greeting"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="14dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="!"
+            android:textSize="24dp"
+            android:fontFamily="@font/jakarta"
+            android:textStyle="bold"
+            android:layout_marginLeft="1dp"
+            android:layout_toRightOf="@+id/nameTv"
+            android:layout_marginTop="14dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/layout1">
+
+        <TextView
+            android:id="@+id/petcat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet Category"
+            android:textSize="18dp"
+            android:fontFamily="@font/jakarta"
+            android:textStyle="bold"
+            android:layout_marginLeft="24dp"/>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:layout_marginTop="18dp">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/dogsec"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/dogsec"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dog"
+            android:textSize="18dp"
+            android:fontFamily="@font/jakarta"
+            android:textStyle="bold"
+            android:layout_below="@+id/dogsec"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/catsec"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/catsec"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true">
+        </ImageView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cat"
+            android:textSize="18dp"
+            android:fontFamily="@font/jakarta"
+            android:textStyle="bold"
+            android:layout_below="@+id/catsec"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"/>
+    </RelativeLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout3"
+        android:layout_marginTop="24dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/rabbitsec"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/rabbitsec"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Rabbit"
+                android:textSize="18dp"
+                android:fontFamily="@font/jakarta"
+                android:textStyle="bold"
+                android:layout_below="@+id/rabbitsec"
+                android:layout_marginTop="12dp"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/hamstersec"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@drawable/hamstersec"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hamster"
+                android:textSize="18dp"
+                android:fontFamily="@font/jakarta"
+                android:textStyle="bold"
+                android:layout_below="@+id/hamstersec"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="12dp"/>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout4"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="@font/jakarta"
+            android:text="Learn"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout6"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/layout5">
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/learn"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout5">
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/userIdTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:visibility="invisible" />
+</RelativeLayout>

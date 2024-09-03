@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PetViewActivity"
+    android:background="@color/mainsecondary">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainprimary"
+        android:layout_marginBottom="2dp">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/beckbtn3"
+            android:padding="14dp" />
+
+        <TextView
+            android:id="@+id/txtOrderSummaryDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:text="Matched Pet Details"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/jakarta"
+            android:textColor="@color/mainaccent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1">
+
+        <ImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/sample2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:scaleType="centerCrop" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout0001"
+        android:layout_below="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainprimary">
+
+
+        <TextView
+            android:id="@+id/txtpetname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="12dp"
+            android:hint="Hunter"
+            android:textColorHint="@color/mainaccent"
+            android:textColor="@color/mainaccent"
+            android:fontFamily="@font/jakarta"
+            android:textSize="28dp"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtbreed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="24dp"
+            android:hint="Askal"
+            android:textColorHint="@color/mainaccent"
+            android:textColor="@color/mainaccent"
+            android:fontFamily="@font/jakarta"
+            android:textSize="18dp"
+            android:layout_below="@+id/txtpetname"/>
+
+
+        <LinearLayout
+            android:id="@+id/layout2322"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_below="@+id/txtbreed">
+
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:background="@drawable/petdetbg1"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="6dp"
+                android:elevation="5dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txtgendertxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Gender"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="@color/mainprimary"
+                    android:textColor="@color/mainprimary"
+                    android:fontFamily="@font/jakarta"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtgender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Gender"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:gravity="center_horizontal"
+                    android:textColorHint="@color/mainsecondary"
+                    android:textColor="@color/mainsecondary"
+                    android:fontFamily="@font/jakarta"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/txtgendertxt"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/petdetbg1"
+                android:gravity="center_horizontal"
+                android:elevation="5dp">
+
+                <TextView
+                    android:id="@+id/txtweighttxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Weight"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="@color/mainprimary"
+                    android:textColor="@color/mainprimary"
+                    android:fontFamily="@font/jakarta"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtweight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Weight"
+                    android:gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:textColorHint="@color/mainsecondary"
+                    android:textColor="@color/mainsecondary"
+                    android:fontFamily="@font/jakarta"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/txtweighttxt"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="6dp"
+                android:background="@drawable/petdetbg1"
+                android:elevation="5dp"
+                android:gravity="center_horizontal">
+
+
+                <TextView
+                    android:id="@+id/txtspeciestxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:hint="Breed Type"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="@color/mainprimary"
+                    android:textColor="@color/mainprimary"
+                    android:fontFamily="@font/jakarta"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtspecies"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Breed Type"
+                    android:gravity="center_horizontal"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="2dp"
+                    android:textColorHint="@color/mainsecondary"
+                    android:textColor="@color/mainsecondary"
+                    android:fontFamily="@font/jakarta"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/txtspeciestxt"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="53dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="6dp"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/petdetbg1"
+                android:elevation="5dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:id="@+id/txtcolortxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Color"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="8dp"
+                    android:textColorHint="@color/mainprimary"
+                    android:textColor="@color/mainprimary"
+                    android:fontFamily="@font/jakarta"
+                    android:textSize="12dp" />
+
+                <TextView
+                    android:id="@+id/txtcolor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Color"
+                    android:layout_centerHorizontal="true"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="2dp"
+                    android:textColorHint="@color/mainsecondary"
+                    android:textColor="@color/mainsecondary"
+                    android:fontFamily="@font/jakarta"
+                    android:textSize="12dp"
+                    android:layout_below="@+id/txtcolortxt"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout0001"
+        android:background="@color/mainprimary"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:id="@+id/petparent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pet Parent"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/jakarta"
+            android:textColor="@color/mainaccent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"></TextView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout001"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout9">
+
+        <LinearLayout
+            android:id="@+id/layout102"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:id="@+id/layout5"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginTop="1dp"
+                android:background="@color/mainprimary">
+
+                <TextView
+                    android:id="@+id/txtMother"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mother"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"
+                    android:textColor="@color/mainaccent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp"></TextView>
+
+                <TextView
+                    android:id="@+id/species_spinnerMother"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Category"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"
+                    android:textColor="@color/mainaccent"
+                    android:layout_below="@+id/txtMother"
+                    android:layout_marginLeft="12dp"/>
+
+                <TextView
+                    android:id="@+id/breed_spinnerMother"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Breed"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"
+                    android:textColor="@color/mainaccent"
+                    android:layout_below="@+id/species_spinnerMother"
+                    android:layout_marginLeft="12dp"/>
+
+                <TextView
+                    android:id="@+id/breedtype_spinnerMother"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Purity"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"
+                    android:textColor="@color/mainaccent"
+                    android:layout_below="@+id/breed_spinnerMother"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="12dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout6"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/layout5"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="1dp"
+                android:layout_marginLeft="1dp"
+                android:background="@color/mainprimary">
+
+                <TextView
+                    android:id="@+id/txtFather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Father"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"
+                    android:textColor="@color/mainaccent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginTop="12dp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/species_spinnerFather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Category"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"
+                    android:textColor="@color/mainaccent"
+                    android:layout_below="@+id/txtFather"
+                    android:layout_marginLeft="12dp"/>
+
+                <TextView
+                    android:id="@+id/breed_spinnerFather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Breed"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"
+                    android:textColor="@color/mainaccent"
+                    android:layout_below="@+id/species_spinnerFather"
+                    android:layout_marginLeft="12dp"/>
+
+                <TextView
+                    android:id="@+id/breedtype_spinnerFather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Purity"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"
+                    android:textColor="@color/mainaccent"
+                    android:layout_below="@+id/breed_spinnerFather"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginBottom="12dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout000"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/layout001">
+
+        <RelativeLayout
+            android:id="@+id/layout10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainprimary"
+            android:layout_marginTop="1dp">
+
+            <TextView
+                android:id="@+id/petcerts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Validations"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:fontFamily="@font/jakarta"
+                android:textColor="@color/mainaccent"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"></TextView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/layout101"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout10"
+            android:orientation="horizontal"
+            android:layout_marginTop="1dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/layout3"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:background="@color/mainprimary"
+                android:layout_marginRight="1dp">
+
+                <TextView
+                    android:id="@+id/vac"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vaccine"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/jakarta"
+                    android:textColor="@color/mainaccent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_centerHorizontal="true"></TextView>
+
+                <ImageView
+                    android:id="@+id/imgVaccine"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/pawsomelogo"
+                    android:scaleType="centerCrop"
+                    android:layout_below="@+id/vac"
+                    android:layout_marginBottom="24dp"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout4"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@color/mainprimary">
+
+                <TextView
+                    android:id="@+id/cert"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Certificate"
+                    android:textSize="18dp"
+                    android:fontFamily="@font/jakarta"
+                    android:textColor="@color/mainaccent"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:layout_centerHorizontal="true"></TextView>
+
+                <ImageView
+                    android:id="@+id/imgCertification"
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/pawsomelogo"
+                    android:layout_weight="1"
+                    android:scaleType="centerCrop"
+                    android:layout_below="@+id/cert"
+                    android:layout_marginBottom="24dp"
+                    android:layout_centerHorizontal="true"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:layout_below="@+id/layout101"
+            android:background="@color/mainprimary"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+    </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainaccent"
+    tools:context="com.petopia.loginsignup.LoginActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:background="@color/mainaccent"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <ImageView
+            android:layout_width="300dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center"
+            android:src="@drawable/loginsplash"/>
+
+
+        <TextView
+            android:id="@+id/titleTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:text="Login"
+            android:layout_marginTop="10dp"
+            android:textAlignment="center"
+            android:textColor="@color/mainsecondary"
+            android:textSize="35dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/jakarta"/>
+
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            android:hint="Email"
+            android:textColorHint="@color/mainaccent"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittextborder"
+            android:paddingLeft="20dp"
+            android:textColor="@color/mainaccent"
+            android:cursorVisible="true"
+            android:drawableLeft="@drawable/round_person"
+            android:drawablePadding="8dp"/>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/mainaccent"
+            app:hintEnabled="false">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEt"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:cursorVisible="true"
+                android:textColorHint="@color/mainaccent"
+                android:background="@drawable/edittextborder"
+                android:textColor="@color/mainaccent"
+                android:hint="Password"
+                android:paddingLeft="25dp"
+                android:drawableLeft="@drawable/round_lock"
+                android:inputType="textPassword"
+                app:passwordToggleDrawable="@drawable/pawsomelogo" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/forgotPass"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="end"
+            android:textColor="@color/mainprimary"
+            android:text="Forgot password?"
+            android:textStyle="bold"
+            android:fontFamily="@font/jakarta"/>
+
+
+
+
+        <Button
+            android:id="@+id/loginBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/passwordEt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/button_bg"
+            android:textColor="@color/mainaccent"
+            android:text="Login"
+            android:elevation="30dp"/>
+
+
+        <TextView
+            android:id="@+id/signupNowTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/loginBtn"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:textColor="@color/mainsecondary"
+            android:text="Don't have an acccount? Signup Now!" />
+
+
+
+        <Button
+            android:id="@+id/testBtn"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_below="@id/passwordEt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bottom_background"
+            android:text="Test"
+            android:visibility="invisible"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+</RelativeLayout>

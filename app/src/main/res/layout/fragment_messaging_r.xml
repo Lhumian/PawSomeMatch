@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainaccent"
+    tools:context="com.petopia.loginsignup.HomeActivity">
+
+    <RelativeLayout
+        android:id="@+id/pawsomenav"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="@color/mainprimary"
+        android:elevation="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/jakarta"
+            android:text="chat window"
+            android:textColor="@color/mainaccent"
+            android:layout_marginTop="12dp"
+            android:textSize="18dp">
+        </TextView>
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:id="@+id/noMessageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="NO MESSAGE FOUND"
+        android:textSize="18sp"
+        android:visibility="visible"/>
+
+
+    <ListView
+        android:id="@+id/userListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/pawsomenav"
+        android:divider="@color/mainsecondary"
+        android:dividerHeight="1dp"/>
+
+
+
+
+</RelativeLayout>

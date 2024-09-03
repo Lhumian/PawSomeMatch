@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PayConfirmation"
+    android:background="@color/mainaccent">
+
+    <RelativeLayout
+        android:id="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainaccent"
+        android:layout_marginBottom="2dp"
+        android:layout_marginTop="12dp"
+        android:layout_below="@+id/layout1">
+
+        <TextView
+            android:id="@+id/txtOrderSummaryDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:text="Select Payment Method"
+            android:textColor="@color/mainprimary"
+            android:layout_centerVertical="true"
+            android:textSize="20sp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainprimary"
+        android:layout_marginBottom="2dp"
+        android:elevation="20dp">
+
+        <TextView
+            android:id="@+id/Pawsomematch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:text="PawsomeMatch"
+            android:textColor="@color/mainaccent"
+            android:textStyle="bold"
+            android:layout_centerVertical="true"
+            android:textSize="16dp"
+            android:layout_centerHorizontal="true"
+            />
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/beckbtn3"
+            android:padding="14dp">
+        </ImageView>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/layout5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/monggoloid">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_marginTop="24dp"
+        android:id="@+id/paymentMethodsLayout"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/layout2">
+
+
+        <!-- Buttons representing payment methods will be added here programmatically -->
+    </LinearLayout>
+</RelativeLayout>

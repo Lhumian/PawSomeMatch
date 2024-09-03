@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainaccent"
+    tools:context=".ParentBreedActivity">
+
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainprimary"
+        android:elevation="20dp">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:padding="14dp"
+            android:src="@drawable/beckbtn3" />
+
+        <TextView
+            android:id="@+id/finddd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:text="Parent Breed"
+            android:textColor="@color/mainaccent"
+            android:textSize="16dp"
+            android:fontFamily="@font/jakarta"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/sad"
+        android:layout_width="match_parent"
+        android:layout_height="174dp"
+        android:src="@drawable/catfam"
+        android:layout_below="@+id/layout1"/>
+
+
+    <LinearLayout
+        android:id="@+id/cardViewsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="150dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="16dp"
+        android:layout_below="@+id/layout1"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/motherCardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/clean_border3"
+                android:padding="15dp"
+                android:orientation="vertical"
+                android:layout_marginRight="1dp">
+
+                <TextView
+                    android:id="@+id/txtMother"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mother"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"
+                    android:textColor="@color/mainaccent"></TextView>
+
+                <Spinner
+                    android:id="@+id/species_spinnerMother"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/style_spinner1"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/breed_spinnerMother"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/style_spinner1" />
+
+                <Spinner
+                    android:id="@+id/breedtype_spinnerMother"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/style_spinner1"
+                    android:entries="@array/purity" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/fatherCardView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:background="@drawable/clean_border3"
+                android:orientation="vertical"
+                android:layout_marginLeft="1dp">
+
+                <TextView
+                    android:id="@+id/txtFather"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Father"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"
+                    android:textColor="@color/mainaccent"></TextView>
+
+                <Spinner
+                    android:id="@+id/species_spinnerFather"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/style_spinner1"
+                    android:textColor="@color/white" />
+
+                <Spinner
+                    android:id="@+id/breed_spinnerFather"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:background="@drawable/style_spinner1" />
+
+                <Spinner
+                    android:id="@+id/breedtype_spinnerFather"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/style_spinner1"
+                    android:entries="@array/purity" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+    <Button
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnSave"
+        android:text="Save"
+        android:textColor="@color/mainaccent"
+        android:textStyle="bold"
+        android:fontFamily="@font/jakarta"
+        android:layout_below="@id/cardViewsLayout"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/round_back_main"
+        android:elevation="20dp"/>
+</RelativeLayout>

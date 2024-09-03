@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".OrderSummaryActivity"
+    android:background="@color/mainsecondary">
+
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainprimary">
+
+        <ImageView
+            android:id="@+id/map"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/gps"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/loc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="12dp"
+            android:fontFamily="@font/jakarta"
+            android:layout_toRightOf="@+id/map"
+            android:text="Delivery Address:"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="@color/mainaccent" />
+
+        <TextView
+            android:id="@+id/txtDeliveryProcessDisplay2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/jakarta"
+            android:layout_below="@+id/loc"
+            android:layout_toRightOf="@+id/map"
+            android:text="City :"
+            android:textColor="@color/mainaccent" />
+
+        <TextView
+            android:id="@+id/cityTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_below="@+id/loc"
+            android:layout_toRightOf="@+id/txtDeliveryProcessDisplay2"
+            android:fontFamily="@font/jakarta"
+            android:textColor="@color/mainaccent"
+            android:text="General Santos City"
+            android:textStyle="bold" />
+
+
+        <TextView
+            android:id="@+id/txtDeliveryProcessDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtDeliveryProcessDisplay2"
+            android:layout_toRightOf="@+id/map"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/jakarta"
+            android:text="Barangay: "
+            android:textColor="@color/mainaccent"/>
+
+        <TextView
+            android:id="@+id/barangayTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:text="Lagao"
+            android:layout_toRightOf="@+id/txtDeliveryProcessDisplay"
+            android:fontFamily="@font/jakarta"
+            android:textColor="@color/mainaccent"
+            android:layout_below="@+id/txtDeliveryProcessDisplay2"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtAd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/barangayTextView"
+            android:layout_toRightOf="@+id/map"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/jakarta"
+            android:text="Street: "
+            android:textColor="@color/mainaccent"/>
+
+        <TextView
+            android:id="@+id/streetTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="12dp"
+            android:text="101 NLSA Road"
+            android:layout_toRightOf="@+id/txtAd"
+            android:fontFamily="@font/jakarta"
+            android:textColor="@color/mainaccent"
+            android:layout_below="@+id/barangayTextView"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:background="@color/mainaccent"
+        android:layout_marginTop="1dp"
+        >
+
+        <TextView
+            android:id="@+id/txtSellerDisplay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="Phone Number: "
+            android:textStyle="bold"
+            android:textColor="@color/mainprimary"
+            android:fontFamily="@font/jakarta"
+            />
+
+        <TextView
+            android:id="@+id/buyerPhoneTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="5dp"
+            android:text="+639063094910"
+            android:textStyle="bold"
+            android:textColor="@color/mainprimary"
+            android:fontFamily="@font/jakarta"
+            android:layout_toRightOf="@id/txtSellerDisplay1"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout9"
+        android:background="@color/mainaccent"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp">
+
+
+        <TextView
+            android:id="@+id/txtPetInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="Pet Information:"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/mainprimary"
+            android:fontFamily="@font/jakarta"/>
+
+
+
+        <TextView
+            android:id="@+id/txtPetNameDisplay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:text="Pet Name:"
+            android:textColor="@color/mainsecondary"
+            android:layout_below="@+id/txtPetInformation"
+            />
+
+        <TextView
+            android:id="@+id/petNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="5dp"
+            android:text="Pet Name:"
+            android:textStyle="bold"
+            android:textColor="@color/mainsecondary"
+            android:layout_below="@+id/txtPetInformation"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/txtPetCategoryDisplay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:text="Status: "
+            android:textColor="@color/mainsecondary"
+            android:layout_below="@+id/txtPetNameDisplay1"
+            />
+
+        <TextView
+            android:id="@+id/statusTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="5dp"
+            android:text="Pet Status:"
+            android:textColor="@color/mainsecondary"
+            android:layout_below="@+id/txtPetNameDisplay1"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/canceldate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="12dp"
+            android:text="Cancel Date: "
+            android:textColor="@color/mainsecondary"
+            android:layout_below="@+id/txtPetCategoryDisplay1"
+            />
+
+        <TextView
+            android:id="@+id/cancelDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="12dp"
+            android:text="date"
+            android:textColor="@color/mainsecondary"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtPetCategoryDisplay1"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout3"
+        android:background="@color/mainaccent"
+        android:layout_marginBottom="1dp"
+        >
+
+        <ImageView
+            android:id="@+id/shield"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/shield"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp">
+
+        </ImageView>
+
+
+        <TextView
+            android:id="@+id/txtPaymentMode1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="76dp"
+            android:layout_marginTop="12dp"
+            android:layout_toRightOf="@+id/shield"
+            android:fontFamily="@font/jakarta"
+            android:text="Payment Method:"
+            android:textColor="@color/mainprimary"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/paymentModeTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_marginStart="12dp"
+            android:layout_toRightOf="@+id/shield"
+            android:text="Cash On Delivery / Gcash"
+            android:textColor="@color/mainprimary"
+            android:textStyle="italic"
+            android:layout_below="@+id/txtPaymentMode1"
+            />
+
+
+        <TextView
+            android:id="@+id/orderDateTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="5dp"
+            android:text="Order Date:"
+            android:textColor="@color/mainsecondary"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/paymentModeTextView"
+            />
+
+        <TextView
+            android:id="@+id/txtOrderDate1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Date:"
+            android:textColor="@color/mainsecondary"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/shield"
+            android:layout_marginStart="12dp"
+            android:layout_below="@+id/paymentModeTextView"
+            />
+
+        <TextView
+            android:id="@+id/reasonTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="5dp"
+            android:text="Reason #1:"
+            android:textColor="@color/mainsecondary"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/orderDateTextView"
+            />
+
+        <TextView
+            android:id="@+id/reas"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reason :"
+            android:textColor="@color/mainsecondary"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="12dp"
+            android:layout_toRightOf="@+id/shield"
+            android:layout_marginStart="12dp"
+            android:layout_below="@+id/orderDateTextView"
+            />
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout5"
+        android:background="@color/mainaccent"
+        android:layout_marginBottom="1dp"
+        >
+
+
+        <TextView
+            android:id="@+id/txtPaymentDetails1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="Payment Details:"
+            android:textSize="22dp"
+            android:textStyle="bold"
+            android:textColor="@color/mainprimary"
+            android:fontFamily="@font/jakarta" />
+
+        <TextView
+            android:id="@+id/txtReferenceDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:text="Reference Number:"
+            android:textColor="@color/mainsecondary"
+            android:layout_below="@+id/txtPaymentDetails1"
+            />
+
+        <TextView
+            android:id="@+id/txtReference"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="5dp"
+            android:text="Reference"
+            android:textColor="@color/mainsecondary"
+            android:layout_below="@+id/txtPaymentDetails1"
+            android:layout_alignParentRight="true"
+            />
+
+        <TextView
+            android:id="@+id/txtPetPriceDisplay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:text="Pet Price:"
+            android:textColor="@color/mainsecondary"
+            android:layout_below="@+id/txtReferenceDisplay"
+            />
+
+        <TextView
+            android:id="@+id/p1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="₱"
+            android:textColor="@color/mainsecondary"
+            android:layout_below="@+id/txtReferenceDisplay"
+            android:layout_toLeftOf="@+id/petPriceTextView"
+            />
+
+        <TextView
+            android:id="@+id/petPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="5dp"
+            android:text="Pet Price:"
+            android:textColor="@color/mainsecondary"
+            android:layout_below="@+id/txtReferenceDisplay"
+            android:layout_alignParentRight="true" />
+
+
+        <TextView
+            android:id="@+id/txtTotalPaymentDisplay1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="12dp"
+            android:text="Total Payment:"
+            android:textColor="@color/mainsecondary"
+            android:layout_below="@+id/txtPetPriceDisplay1"
+            />
+
+        <TextView
+            android:id="@+id/P"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="₱"
+            android:textColor="@color/mainsecondary"
+            android:textStyle="bold"
+            android:layout_toLeftOf="@+id/totalPriceTextView"
+            android:layout_below="@+id/txtPetPriceDisplay1"
+            />
+        <TextView
+            android:id="@+id/totalPriceTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="5dp"
+            android:text="Total Payment:"
+            android:textColor="@color/mainsecondary"
+            android:textStyle="bold"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/txtPetPriceDisplay1"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

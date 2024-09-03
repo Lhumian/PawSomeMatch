@@ -1,0 +1,11 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".ChatActivity">
+
+    <item
+        android:id="@+id/action_send_breeding_request"
+        android:title="Send Breeding Request"
+        app:showAsAction="always"
+        android:icon="@drawable/baseline_send_24" />
+</menu>

@@ -1,0 +1,82 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainaccent"
+    tools:context="com.petopia.loginsignup.Profile">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/topmatch"
+        android:background="@color/mainprimary"
+        android:elevation="20dp">
+
+        <TextView
+            android:id="@+id/nameTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="name"
+            android:gravity="center"
+            android:textColor="@color/mainaccent"
+            android:textSize="20dp"
+            android:visibility="invisible"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="pet profile"
+            android:textColor="@color/mainaccent"
+            android:textSize="18sp"
+            android:fontFamily="@font/jakarta"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/topmatch">
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/myListView"
+            android:background="@color/mainaccent"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/noPetMessage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="NO PET REGISTERED"
+                android:textColor="@color/mainsecondary"
+                android:textSize="18sp"
+                android:fontFamily="@font/jakarta"
+                android:visibility="gone"/>
+        </RelativeLayout>
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="12dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/addpet"
+                android:id="@+id/petBtn"/>
+
+        </FrameLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

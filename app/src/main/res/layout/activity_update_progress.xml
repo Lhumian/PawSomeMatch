@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".UpdateProgressActivity"
+    android:background="@color/mainaccent">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainprimary">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/beckbtn3"
+            android:padding="14dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="Update Progress"
+            android:textColor="@color/mainaccent"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/jakarta"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:background="@drawable/round_back_white_1011"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:padding="5dp">
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp">
+
+            <ImageView
+                android:id="@+id/peticon"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:src="@drawable/petid" />
+
+            <TextView
+                android:id="@+id/txtPetId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/peticon"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Pet ID:"
+                android:textSize="16dp"
+                android:textColor="@color/mainsecondary"
+                android:fontFamily="@font/jakarta"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout2">
+
+            <ImageView
+                android:id="@+id/phoneicon"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:src="@drawable/phoneicon" />
+
+
+            <TextView
+                android:id="@+id/txtBuyerPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/phoneicon"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Buyer Phone:"
+                android:textSize="16dp"
+                android:textColor="@color/mainsecondary"
+                android:fontFamily="@font/jakarta"/>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout3">
+
+            <ImageView
+                android:id="@+id/petpriceicon"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:src="@drawable/petpriceicon" />
+
+
+            <TextView
+                android:id="@+id/txtPetPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/petpriceicon"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Pet Price:"
+                android:textSize="16dp"
+                android:textColor="@color/mainsecondary"
+                android:fontFamily="@font/jakarta"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout4">
+
+            <ImageView
+                android:id="@+id/priceicon"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:src="@drawable/priceicon" />
+
+
+            <TextView
+                android:id="@+id/txtTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/priceicon"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:textSize="16dp"
+                android:text="Total Price:"
+                android:textColor="@color/mainsecondary"
+                android:fontFamily="@font/jakarta"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout5">
+
+
+            <ImageView
+                android:id="@+id/paymenticon"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:src="@drawable/paymenticon" />
+
+            <TextView
+                android:id="@+id/txtPaymentMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/paymenticon"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Payment Mode:"
+                android:textSize="16dp"
+                android:textColor="@color/mainsecondary"
+                android:fontFamily="@font/jakarta"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout6">
+
+            <ImageView
+                android:id="@+id/cityicon"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:src="@drawable/cityicon" />
+
+
+            <TextView
+                android:id="@+id/txtCity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/cityicon"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="City:"
+                android:textSize="16dp"
+                android:textColor="@color/mainsecondary"
+                android:fontFamily="@font/jakarta"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout7">
+
+
+            <ImageView
+                android:id="@+id/barangayicon"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:src="@drawable/barangayicon" />
+
+            <TextView
+                android:id="@+id/txtBarangay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/barangayicon"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Barangay:"
+                android:textSize="16dp"
+                android:textColor="@color/mainsecondary"
+                android:fontFamily="@font/jakarta"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout8">
+
+            <ImageView
+                android:id="@+id/streeticon"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:src="@drawable/streeticon" />
+
+            <TextView
+                android:id="@+id/txtStreet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/streeticon"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Street:"
+                android:textSize="16dp"
+                android:textColor="@color/mainsecondary"
+                android:fontFamily="@font/jakarta"/>
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout9">
+
+            <ImageView
+                android:id="@+id/ordericon"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:src="@drawable/ordericon" />
+
+
+            <TextView
+                android:id="@+id/txtOrderDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ordericon"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:text="Order Date:"
+                android:textSize="16dp"
+                android:textColor="@color/mainsecondary"
+                android:fontFamily="@font/jakarta"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout10">
+
+            <ImageView
+                android:id="@+id/deliveryicon"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:src="@drawable/deliveryicon" />
+
+
+            <TextView
+                android:id="@+id/txtDeliveryProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/deliveryicon"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:textSize="16dp"
+                android:textColor="@color/mainsecondary"
+                android:fontFamily="@font/jakarta"
+                android:text="Delivery Progress:" />
+
+
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout11">
+
+            <ImageView
+                android:id="@+id/ksadlk"
+                android:layout_centerVertical="true"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:padding="12dp"
+                android:src="@drawable/deliveryicon"
+                android:visibility="invisible"/>
+
+            <Spinner
+                android:id="@+id/spinnerDeliveryProgress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/ksadlk"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="12dp"
+                android:textSize="16dp"
+                android:textColor="@color/mainaccent"
+                android:fontFamily="@font/jakarta"
+                android:entries="@array/delivery" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout12">
+
+            <Button
+                android:id="@+id/btnUpdateProgress"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:text="Update Progress"
+                android:textStyle="bold"
+                android:textSize="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:textColor="@color/mainaccent"
+                android:fontFamily="@font/jakarta"
+                android:background="@drawable/round_back_main"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

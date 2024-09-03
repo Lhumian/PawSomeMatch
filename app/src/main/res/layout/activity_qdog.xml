@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".qCat"
+    android:background="@color/mainaccent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:fontFamily="@font/jakarta"
+                android:text="Top 10 Most Popular Dog Breeds"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/mainsecondary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/petname_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/jakarta"
+                android:text="Introduction"
+                android:textColor="@color/mainsecondary"
+                android:textSize="16dp" />
+
+            <TextView
+                android:id="@+id/intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/jakarta"
+                android:text="Thinking about adding a loyal, playful canine companion to your family? Dogs make great friends with their lovable nature and endearing behaviors. They can be trained for tricks, housebreaking, and they even groom themselves. In short, dogs are pawsome! There are many dog breeds, each with its own unique characteristics. Here are 10 of the most popular breeds to help you choose your new furry friend!"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:lineSpacingMultiplier="1.3"
+                android:textAlignment="textStart" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:src="@drawable/dogfq1"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/dogfq2"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/dogfq3"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:src="@drawable/dogfq4"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/dogfq5"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/dogfq6"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/dogfq7"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:src="@drawable/dogfq8"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/dogfq9"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/dogfq10"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="24dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+    <FrameLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/beckbtn"
+            android:padding="14dp" />
+
+    </FrameLayout>
+
+</RelativeLayout>

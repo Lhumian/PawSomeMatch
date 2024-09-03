@@ -1,0 +1,172 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainaccent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <ImageView
+            android:id="@+id/imgPhoto"
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:scaleType="centerCrop"
+            android:background="@drawable/ic_launcher_background"/>
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/beckbtn"
+            android:padding="14dp" />
+
+        <RelativeLayout
+            android:id="@+id/layoutborder"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="400dp"
+            android:layout_centerHorizontal="true"
+            android:elevation="12dp"
+            android:padding="12dp"
+            android:background="@drawable/browse_pet_border"
+            android:layout_marginBottom="24dp">
+
+            <RelativeLayout
+                android:id="@+id/layoutasd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="12dp"
+                android:padding="12dp"
+                android:layout_marginBottom="8dp">
+
+                <TextView
+                    android:id="@+id/pet_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:text="Name"
+                    android:fontFamily="@font/jakarta"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/breed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:text="breed"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_below="@id/pet_name"
+                    android:textSize="18dp" />
+
+                <ImageView
+                    android:id="@+id/desc"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="18dp"
+                    android:src="@drawable/iconpet"
+                    android:layout_below="@id/breed" />
+
+
+                <TextView
+                    android:id="@+id/description"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/breed"
+                    android:layout_toRightOf="@id/desc"
+                    android:layout_marginTop="20dp"
+                    android:text="Purebred"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/jakarta"
+                    android:textSize="16dp" />
+
+                <ImageView
+                    android:id="@+id/gend"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/genderpet"
+                    android:layout_below="@id/description" />
+
+                <TextView
+                    android:id="@+id/gender"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="5dp"
+                    android:text="gender"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_below="@id/description"
+                    android:layout_toRightOf="@+id/gend"
+                    android:textSize="16dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/desce"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="12dp"
+                    android:src="@drawable/personality"
+                    android:layout_below="@id/gender"/>
+
+
+                <TextView
+                    android:id="@+id/breed_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Persnality"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginLeft="5dp"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_below="@id/gender"
+                    android:layout_toRightOf="@+id/desce"
+                    android:textSize="16dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_below="@+id/layoutasd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+
+                <TextView
+                    android:id="@+id/pricetxt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="₱"
+                    android:fontFamily="@font/jakarta"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true" />
+
+                <TextView
+                    android:id="@+id/price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="300,000.00"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_centerVertical="true"
+                    android:textSize="28dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/pricetxt"/>
+
+                <ImageView
+                    android:layout_height="63dp"
+                    android:layout_width="130dp"
+                    android:id="@+id/payButton"
+                    android:src="@drawable/adoptbutton"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentRight="true"
+                    />
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img_11"
+    tools:context="com.petopia.loginsignup.Profile">
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:menu="@menu/bottom_nav"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bottom_background"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:elevation="2dp"
+        app:itemIconTint="@drawable/item_selector"
+        />
+    
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:id="@+id/profileImg"
+        android:layout_marginTop="40dp"
+        android:src="@drawable/person"
+        android:layout_centerHorizontal="true"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="name"
+        android:layout_marginTop="180dp"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+    <Button
+        android:id="@+id/petBtn"
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/pet_button_border"
+        android:layout_marginTop="220dp"
+        android:onClick="petRegister"
+        android:text="Add Pet"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:drawableLeft="@drawable/pets"
+        android:padding="8dp"
+        />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="270dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="30dp"
+            app:cardElevation="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pets"
+                android:textSize="40sp"
+                android:textAlignment="center"
+                android:textColor="@color/lavender"
+                android:textStyle="bold"/>
+
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp"
+        android:layout_centerVertical="true"
+        app:cardElevation="20dp">
+
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/myListView"/>
+
+    </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</RelativeLayout>

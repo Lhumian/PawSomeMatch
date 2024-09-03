@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings.FAQ"
+    android:background="@color/mainaccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Settings"
+        android:background="@color/mainaccent">
+
+
+        <RelativeLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainprimary"
+            android:elevation="20dp">
+
+
+            <ImageView
+                android:id="@+id/backBtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/beckbtn3"
+                android:padding="14dp"/>
+
+            <TextView
+                android:id="@+id/txtOrderSummaryDisplay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Platform Rules"
+                android:textColor="@color/mainaccent"
+                android:textStyle="bold"
+                android:fontFamily="@font/jakarta"
+                android:layout_centerVertical="true"
+                android:textSize="16sp"
+                android:layout_centerHorizontal="true"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout000"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/layout1">
+
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="12dp"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/blacklayoutborder">
+
+                <TextView
+                    android:id="@+id/txt1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Respect and Courtesy: "
+                    android:textColor="@color/mainprimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"/>
+
+                <ImageView
+                    android:id="@+id/plus"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/plus"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:id="@+id/minus"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/minus"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"/>
+
+
+                <TextView
+                    android:id="@+id/txt11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt1"
+                    android:text="By using PawsomeMatch, you agree to abide by these terms and conditions. If you do not agree with any part of these terms, please refrain from using the app."
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_marginBottom="12dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout2"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/blacklayoutborder">
+
+                <TextView
+                    android:id="@+id/txt2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Honesty and Accuracy: "
+                    android:textColor="@color/mainprimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"/>
+
+                <ImageView
+                    android:id="@+id/plus1"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/plus"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:id="@+id/minus1"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/minus"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"/>
+
+
+                <TextView
+                    android:id="@+id/txt22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt2"
+                    android:text="Pawsome"
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_marginBottom="12dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout3"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/blacklayoutborder">
+
+                <TextView
+                    android:id="@+id/txt3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Privacy and Data: "
+                    android:textColor="@color/mainprimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"/>
+
+                <ImageView
+                    android:id="@+id/plus2"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/plus"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:id="@+id/minus2"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/minus"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"/>
+
+
+                <TextView
+                    android:id="@+id/txt33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt3"
+                    android:text="Pawsome"
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_marginBottom="12dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout4"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/blacklayoutborder">
+
+                <TextView
+                    android:id="@+id/txt4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Inappropriate Content: "
+                    android:textColor="@color/mainprimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"/>
+
+                <ImageView
+                    android:id="@+id/plus3"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/plus"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:id="@+id/minus3"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/minus"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"/>
+
+
+                <TextView
+                    android:id="@+id/txt44"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt4"
+                    android:text="Pawsome"
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_marginBottom="12dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout5"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/blacklayoutborder">
+
+                <TextView
+                    android:id="@+id/txt5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Report Misconduct: "
+                    android:textColor="@color/mainprimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"/>
+
+                <ImageView
+                    android:id="@+id/plus4"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/plus"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:id="@+id/minus4"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/minus"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"/>
+
+
+                <TextView
+                    android:id="@+id/txt55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt5"
+                    android:text="Pawsome"
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="12dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout6"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/blacklayoutborder">
+
+                <TextView
+                    android:id="@+id/txt6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginRight="24dp"
+                    android:text="Account Responsibility: "
+                    android:textColor="@color/mainprimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"/>
+
+                <ImageView
+                    android:id="@+id/plus5"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/plus"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:id="@+id/minus5"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/minus"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"/>
+
+
+                <TextView
+                    android:id="@+id/txt66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt6"
+                    android:text="Pawsome"
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="12dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout7"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/blacklayoutborder">
+
+                <TextView
+                    android:id="@+id/txt7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Age Requirement: "
+                    android:textColor="@color/mainprimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"/>
+
+                <ImageView
+                    android:id="@+id/plus6"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/plus"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:id="@+id/minus6"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/minus"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"/>
+
+
+                <TextView
+                    android:id="@+id/txt77"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt7"
+                    android:text="Pawsome"
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_marginBottom="12dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout8"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                android:background="@drawable/blacklayoutborder">
+
+                <TextView
+                    android:id="@+id/txt8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:layout_marginBottom="8dp"
+                    android:text="Terms and Conditions: "
+                    android:textColor="@color/mainprimary"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"/>
+
+                <ImageView
+                    android:id="@+id/plus7"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/plus"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"/>
+
+                <ImageView
+                    android:id="@+id/minus7"
+                    android:layout_width="18dp"
+                    android:layout_height="18dp"
+                    android:src="@drawable/minus"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentRight="true"/>
+
+
+                <TextView
+                    android:id="@+id/txt88"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt8"
+                    android:text="Pawsome"
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_marginBottom="12dp"/>
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

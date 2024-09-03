@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainprimary">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="400dp">
+
+        <ImageView
+            android:id="@+id/pet_image"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="400dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/pawsomelogo" />
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/beckbtn"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            />
+
+
+
+    </androidx.cardview.widget.CardView>
+
+
+    <ScrollView
+        android:layout_below="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mainprimary">
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pet_name"
+                    android:textSize="28dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Pet Name"
+                    android:textColor="@color/mainaccent"
+                    android:fontFamily="@font/jakarta"
+                    android:textStyle="bold"
+                    android:layout_marginLeft="24dp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:textSize="28dp"
+                    android:text=","
+                    android:textColor="@color/mainaccent"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_toRightOf="@+id/pet_name"
+                    ></TextView>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/pet_name"
+                    android:id="@+id/pet_category"
+                    android:textSize="20dp"
+                    android:layout_marginTop="16dp"
+                    android:text="Breed"
+                    android:textColor="@color/mainaccent"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_marginLeft="24dp"
+                    android:layout_alignParentBottom="true"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layout3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pet_gender"
+                    android:textSize="20sp"
+                    android:layout_marginTop="12dp"
+                    android:text="Gender"
+                    android:textColor="@color/mainaccent"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_marginLeft="24dp"
+                    android:layout_below="@+id/pet_breed"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/pet_breed"
+                    android:textSize="20dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Category"
+                    android:textColor="@color/mainaccent"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_marginLeft="24dp"/>
+
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/pet_breedtype"
+                    android:textSize="20dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Breed Type"
+                    android:textColor="@color/mainaccent"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_marginLeft="24dp"
+                    android:layout_below="@+id/pet_gender"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/pet_studfee"
+                    android:textSize="20dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Stud Fee"
+                    android:textColor="@color/mainaccent"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_marginLeft="24dp"
+                    android:layout_below="@+id/pet_breedtype"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:id="@+id/pet_shares"
+                    android:textSize="20dp"
+                    android:layout_marginTop="12dp"
+                    android:text="Shares"
+                    android:textColor="@color/mainaccent"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_marginLeft="24dp"
+                    android:layout_below="@+id/pet_studfee"/>
+            </RelativeLayout>
+
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:id="@+id/btn_like"
+                    android:text="Like"
+                    android:fontFamily="@font/jakarta"
+                    android:layout_marginRight="18dp"
+                    android:src="@drawable/heart2"
+                    android:layout_marginTop="18dp"
+                    android:layout_gravity="end"
+                    android:layout_alignParentRight="true"/>
+            </FrameLayout>
+
+
+
+        </RelativeLayout>
+
+
+
+    </ScrollView>
+
+
+</RelativeLayout>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="@color/mainaccent"
+    tools:context="com.petopia.loginsignup.PetSellingF">
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="@color/mainprimary"
+        android:elevation="20dp">
+
+        <TextView
+            android:id="@+id/xd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jakarta"
+            android:text="Your Posts"
+            android:textColor="@color/mainaccent"
+            android:textSize="18dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="24dp"
+            android:layout_centerVertical="true"
+            android:textStyle="bold">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/btn_browse"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="24dp"
+            android:padding="5dp"
+            android:src="@drawable/browsepet">
+        </ImageView>
+    </RelativeLayout>
+
+
+    <ListView
+        android:id="@+id/selling_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainaccent"
+        android:layout_below="@+id/layout1"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/noPetMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jakarta"
+            android:text="NO PET REGISTERED"
+            android:textColor="@color/mainsecondary"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        android:layout_margin="12dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/addpet"
+            android:id="@+id/btn_post" />
+    </FrameLayout>
+</RelativeLayout>

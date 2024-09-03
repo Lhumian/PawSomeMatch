@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Name -->
+    <TextView
+        android:id="@+id/nameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Name Placeholder"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="@font/jakarta"/>
+
+    <!-- Phone -->
+    <TextView
+        android:id="@+id/phoneTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone Placeholder"
+        android:textSize="16sp"
+        android:fontFamily="@font/jakarta"
+        android:layout_marginTop="5dp"/>
+
+    <!-- City -->
+    <TextView
+        android:id="@+id/cityTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="City Placeholder"
+        android:textSize="16sp"
+        android:fontFamily="@font/jakarta"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Barangay -->
+    <TextView
+        android:id="@+id/barangayTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Barangay Placeholder"
+        android:textSize="16sp"
+        android:fontFamily="@font/jakarta"
+        android:layout_marginTop="5dp"/>
+
+    <!-- Street -->
+    <TextView
+        android:id="@+id/streetTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Street Placeholder"
+        android:textSize="16sp"
+        android:fontFamily="@font/jakarta"
+        android:layout_marginTop="5dp"/>
+</LinearLayout>

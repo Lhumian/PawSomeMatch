@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="90dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mainaccent">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="1dp">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/userPhotoImageView"
+            android:layout_marginLeft="4dp"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_centerVertical="true"
+            android:padding="8dp"
+            android:src="@drawable/pawsomelogo"/>
+
+        <TextView
+            android:id="@+id/userNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:layout_toRightOf="@+id/userPhotoImageView"
+            android:text="username"
+            android:textColor="@color/mainsecondary"
+            android:fontFamily="@font/jakarta"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="0dp"
+            android:layout_marginTop="18dp"/>
+
+        <TextView
+            android:id="@+id/likedPetTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Liked your pet:"
+            android:fontFamily="@font/jakarta"
+            android:textColor="@color/mainsecondary"
+            android:textSize="12sp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/userPhotoImageView"
+            android:layout_below="@+id/userNameTextView"
+            android:layout_marginBottom="12dp"/>
+
+
+        <TextView
+            android:id="@+id/petNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="petname"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/likedPetTextView"
+            android:layout_below="@+id/userNameTextView"
+            android:textColor="@color/mainsecondary"
+            android:fontFamily="@font/jakarta"
+            android:textStyle="bold"
+            android:textSize="12sp"
+            android:layout_marginBottom="12dp"
+            />
+
+    </RelativeLayout>
+
+</RelativeLayout>

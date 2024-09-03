@@ -1,0 +1,52 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.petopia.loginsignup.Match"
+    android:background="@color/mainaccent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/topmatch"
+        android:background="@color/mainprimary">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="my pets"
+            android:textColor="@color/mainaccent"
+            android:textSize="18sp"
+            android:fontFamily="@font/jakarta"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+    <ListView
+        android:layout_below="@+id/topmatch"
+        android:id="@+id/myListView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/mainaccent"/>
+
+    <!-- Centered message -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/noPetMessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jakarta"
+            android:text="NO PET REGISTERED"
+            android:textColor="@color/mainsecondary"
+            android:textSize="18sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+</RelativeLayout>

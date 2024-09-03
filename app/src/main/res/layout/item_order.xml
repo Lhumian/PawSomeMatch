@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainsecondary">
+
+    <RelativeLayout
+        android:id="@+id/layout100"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp">
+
+        <RelativeLayout
+            android:id="@+id/layout2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainprimary">
+
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet Name: "
+                android:textSize="16sp"
+                android:layout_marginLeft="12dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/jakarta"
+                android:textColor="@color/mainaccent"/>
+
+            <TextView
+                android:id="@+id/textPetName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet Name"
+                android:textSize="16sp"
+                android:layout_toRightOf="@+id/name"
+                android:layout_marginLeft="5dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/jakarta"
+                android:textColor="@color/mainaccent"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/textBuyerPhone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Buyer Phone"
+                android:textSize="12sp"
+                android:layout_marginLeft="12dp"
+                android:layout_below="@id/textPetName"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/jakarta"
+                android:textColor="@color/mainaccent"/>
+
+            <TextView
+                android:id="@+id/btnCancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:text="Cancel Order"
+                android:textColor="@color/mainlight"
+                android:textSize="12dp"
+                android:fontFamily="@font/jakarta"
+                android:background="@drawable/redlayoutborder"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/layout3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout2"
+            android:background="@color/mainaccent"
+            android:layout_marginTop="1dp">
+
+            <ImageView
+                android:id="@+id/map"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginLeft="12dp"
+                android:src="@drawable/map2"
+                />
+
+            <TextView
+                android:id="@+id/loc"
+                android:layout_toRightOf="@+id/map"
+                android:layout_marginLeft="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery Address"
+                android:textSize="16sp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/jakarta"
+                android:textColor="@color/mainprimary"/>
+
+
+            <TextView
+                android:id="@+id/textCity"
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/loc"
+                android:text="City"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"
+                android:fontFamily="@font/jakarta"
+                android:textColor="@color/mainsecondary"/>
+
+            <TextView
+                android:id="@+id/textBarangay"
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Barangay"
+                android:textSize="14sp"
+                android:layout_below="@id/textCity"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/jakarta"
+                android:textColor="@color/mainsecondary"/>
+
+            <TextView
+                android:id="@+id/textStreet"
+                android:layout_marginLeft="12dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Street"
+                android:textSize="14sp"
+                android:layout_below="@id/textBarangay"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/jakarta"
+                android:textColor="@color/mainsecondary"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout3"
+            android:background="@color/mainaccent"
+            android:layout_marginTop="1dp">
+
+            <ImageView
+                android:id="@+id/payment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/payment"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="12dp"/>
+
+
+            <TextView
+                android:id="@+id/textPetPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet Price"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/payment"
+                android:layout_marginTop="12dp"
+                android:textSize="14sp"
+                android:fontFamily="@font/jakarta"
+                android:textColor="@color/mainprimary"/>
+
+
+            <TextView
+                android:id="@+id/textTotalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Order Price"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_below="@id/textPetPrice"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="12dp"
+                android:fontFamily="@font/jakarta"
+                android:textColor="@color/mainprimary"/>
+
+
+            <TextView
+                android:id="@+id/textPaymentMode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment Mode"
+                android:layout_below="@id/textPetPrice"
+                android:layout_marginLeft="8dp"
+                android:layout_toRightOf="@+id/payment"
+                android:textSize="14sp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/jakarta"
+                android:textColor="@color/mainprimary"/>
+
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/layout5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/layout4"
+            android:background="@color/mainaccent"
+            android:layout_marginTop="1dp">
+
+
+            <TextView
+                android:id="@+id/textOrderDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"
+                android:text="Order Date"
+                android:textSize="12dp"
+                android:fontFamily="@font/jakarta"/>
+
+            <TextView
+                android:id="@+id/textDeliveryProgress"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Received"
+                android:textSize="12dp"
+                android:layout_below="@id/textOrderDate"
+                android:fontFamily="@font/jakarta"/>
+
+            <Button
+                android:id="@+id/btnOrderReceived"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="6dp"
+                android:text="Order Received"
+                android:textColor="@color/mainaccent"
+                android:layout_centerVertical="true"
+                android:textSize="12dp"
+                android:background="@color/mainprimary"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+</RelativeLayout>

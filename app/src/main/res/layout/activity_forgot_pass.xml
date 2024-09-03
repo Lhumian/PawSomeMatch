@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ForgotPassActivity"
+    android:background="@color/mainaccent">
+
+
+    <RelativeLayout
+        android:id="@+id/layout222"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainprimary"
+        android:elevation="20dp"
+        >
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/beckbtn3"
+            android:padding="14dp" />
+
+        <TextView
+            android:id="@+id/yoko"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:text="Verification"
+            android:textColor="@color/mainaccent"
+            android:fontFamily="@font/jakarta"
+            android:textSize="18dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+
+    <ImageView
+        android:id="@+id/bel"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@+id/layout222"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="-1dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/doggo111"></ImageView>
+
+    <RelativeLayout
+        android:id="@+id/layout223"
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_alignParentBottom="true"
+        android:elevation="50dp"
+        android:background="@drawable/post_border2">
+
+        <TextView
+            android:id="@+id/txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Validation code"
+            android:textSize="24dp"
+            android:fontFamily="@font/jakarta"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="36dp"
+            android:textColor="@color/mainsecondary"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Checkyour email inbox and enter the validation code here to change password"
+            android:textSize="16dp"
+            android:fontFamily="@font/jakarta"
+            android:layout_below="@+id/txt"
+            android:textColor="@color/mainsecondary"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="36dp"
+            android:layout_marginRight="36dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"/>
+
+
+
+        <RelativeLayout
+            android:id="@+id/layout292"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txt1"
+            android:layout_marginTop="12dp"
+            android:gravity="center">
+
+            <EditText
+                android:id="@+id/verificationCodeEt1"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="16dp"
+                android:fontFamily="@font/jakarta"
+                android:hint=""
+                android:inputType="number"
+                android:maxLength="1"
+                android:background="@drawable/et_bg"
+                android:textColor="@color/mainsecondary"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/verificationCodeEt2"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/verificationCodeEt1"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="2dp"
+                android:fontFamily="@font/jakarta"
+                android:hint=""
+                android:textColor="@color/mainsecondary"
+                android:inputType="number"
+                android:maxLength="1"
+                android:background="@drawable/et_bg"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/verificationCodeEt3"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/verificationCodeEt2"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="2dp"
+                android:fontFamily="@font/jakarta"
+                android:hint=""
+                android:textColor="@color/mainsecondary"
+                android:inputType="number"
+                android:maxLength="1"
+                android:background="@drawable/et_bg"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/verificationCodeEt4"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/verificationCodeEt3"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="2dp"
+                android:fontFamily="@font/jakarta"
+                android:hint=""
+                android:textColor="@color/mainsecondary"
+                android:inputType="number"
+                android:maxLength="1"
+                android:background="@drawable/et_bg"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/verificationCodeEt5"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/verificationCodeEt4"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="2dp"
+                android:fontFamily="@font/jakarta"
+                android:hint=""
+                android:textColor="@color/mainsecondary"
+                android:inputType="number"
+                android:maxLength="1"
+                android:background="@drawable/et_bg"
+                android:textSize="18sp"
+                android:gravity="center"/>
+
+            <EditText
+                android:id="@+id/verificationCodeEt6"
+                android:layout_width="40dp"
+                android:layout_height="50dp"
+                android:layout_toEndOf="@+id/verificationCodeEt5"
+                android:layout_marginTop="12dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="16dp"
+                android:fontFamily="@font/jakarta"
+                android:hint=""
+                android:textColor="@color/mainsecondary"
+                android:inputType="number"
+                android:maxLength="1"
+                android:background="@drawable/et_bg"
+                android:textSize="18sp"
+                android:gravity="center"/>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/verifyBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/round_back_white_103"
+            android:text="Confirm"
+            android:textColor="@color/mainaccent"
+            android:layout_below="@+id/layout292"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="12dp"
+            android:elevation="20dp"/>
+    </RelativeLayout>
+
+</RelativeLayout>

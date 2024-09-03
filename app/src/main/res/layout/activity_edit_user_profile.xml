@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditUserProfile"
+    android:background="@color/mainaccent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainprimary">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/beckbtn3"
+            android:padding="14dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:fontFamily="@font/jakarta"
+            android:text="Edit Profile"
+            android:textColor="@color/mainaccent"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        app:cardElevation="20dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainaccent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_vertical"
+                android:background="@color/mainprimary"
+                android:orientation="vertical"
+                android:padding="24dp">
+
+
+                <TextView
+                    android:id="@+id/titleTv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
+                    android:text="User Profile"
+                    android:textAlignment="center"
+                    android:textColor="@color/mainaccent"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"/>
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profileImage"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/profile_icon" />
+
+                <TextView
+                    android:id="@+id/editPicture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:text="Edit Photo"
+                    android:textColor="@color/mainaccent"
+                    android:textSize="15sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"/>
+
+
+                <TextView
+                    android:id="@+id/showEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Edit Email:"
+                    android:textColor="@color/mainaccent"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"/>
+
+                <EditText
+                    android:id="@+id/eEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/main_border"
+                    android:cursorVisible="true"
+                    android:drawablePadding="8dp"
+                    android:inputType="text"
+                    android:padding="8dp"
+                    android:textColor="@color/mainsecondary"
+                    android:textCursorDrawable="@drawable/cursor_indicator"
+                    android:fontFamily="@font/jakarta"/>
+
+                <TextView
+                    android:id="@+id/showNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:text="Edit Phone Number:"
+                    android:textColor="@color/mainaccent"
+                    android:textSize="18sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"/>
+
+                <EditText
+                    android:id="@+id/eNumber"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/main_border"
+                    android:cursorVisible="true"
+                    android:drawablePadding="8dp"
+                    android:inputType="number"
+                    android:padding="8dp"
+                    android:textColor="@color/mainsecondary"
+                    android:textCursorDrawable="@drawable/cursor_indicator"/>
+
+                <Button
+                    android:id="@+id/saveBtn"
+                    android:layout_width="70dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/main_border"
+                    android:textColor="@color/mainsecondary"
+                    android:radius="50dp"
+                    android:text="save"></Button>
+
+            </LinearLayout>
+
+        </ScrollView>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/userIdxD"
+        android:layout_marginTop="15dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:visibility="invisible"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+
+
+
+</LinearLayout>

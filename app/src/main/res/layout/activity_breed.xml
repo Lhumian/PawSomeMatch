@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BreedActivity"
+    android:background="@color/mainaccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainprimary"
+        android:elevation="20dp">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/beckbtn3"
+            android:padding="14dp" />
+
+        <TextView
+            android:id="@+id/txtOrderSummaryDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:text="Breeding Status"
+            android:textColor="@color/mainaccent"
+            android:fontFamily="@font/jakarta"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            />
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout1">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_below="@id/layout1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16dp">
+
+                <RelativeLayout
+                    android:id="@+id/layout8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="12dp"
+                    android:background="@drawable/clean_border2">
+
+                    <TextView
+                        android:id="@+id/petNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Your pet"
+                        android:textColor="@color/mainsecondary"
+                        android:fontFamily="@font/jakarta"/>
+
+                    <TextView
+                        android:id="@+id/petNameValueTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_below="@+id/petNameTextView"
+                        android:text="name"
+                        android:textStyle="bold"
+                        android:textColor="@color/mainsecondary"
+                        android:fontFamily="@font/jakarta"/>
+
+                    <ImageView
+                        android:id="@+id/matchicon"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/matchicon"
+                        android:layout_centerVertical="true"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginBottom="12dp"
+                        android:layout_marginLeft="12dp"/>
+
+                    <TextView
+                        android:id="@+id/likedPetNameTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="16dp"
+                        android:text="Matched pet"
+                        android:textColor="@color/mainsecondary"
+                        android:fontFamily="@font/jakarta"/>
+
+
+                    <TextView
+                        android:id="@+id/likedPetNameValueTextView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/likedPetNameTextView"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginRight="12dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="12dp"
+                        android:text="petname"
+                        android:textStyle="bold"
+                        android:textColor="@color/mainsecondary"
+                        android:fontFamily="@font/jakarta"/>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout8"
+                    android:background="@drawable/clean_border2">
+
+
+                    <ImageView
+                        android:id="@+id/pregnancystat"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:src="@drawable/pregnancystat"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="20dp"
+                        android:layout_marginLeft="12dp"/>
+
+                    <TextView
+                        android:id="@+id/txtStatus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@+id/pregnancystat"
+                        android:layout_marginTop="24dp"
+                        android:textSize="18dp"
+                        android:text="Status:"
+                        android:fontFamily="@font/jakarta"/>
+
+                    <TextView
+                        android:id="@+id/statusDescription"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="24dp"
+                        android:layout_toRightOf="@+id/pregnancystat"
+                        android:text="Pregnancy Status"
+                        android:textSize="18dp"
+                        android:textStyle="bold"
+                        android:layout_below="@+id/txtStatus"
+                        android:fontFamily="@font/jakarta"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_marginTop="12dp"
+                    android:layout_below="@+id/layout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <RelativeLayout
+                        android:id="@+id/layout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/clean_border2">
+
+                        <ImageView
+                            android:id="@+id/healthstatus"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/healthstatus"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="12dp"
+                            />
+
+                        <TextView
+                            android:id="@+id/txtHealth"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toRightOf="@+id/healthstatus"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="24dp"
+                            android:textSize="18dp"
+                            android:text="Health:"
+                            android:fontFamily="@font/jakarta"/>
+
+                        <TextView
+                            android:id="@+id/healthDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="24dp"
+                            android:layout_toRightOf="@+id/healthstatus"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:text="Health Status:"
+                            android:layout_below="@+id/txtHealth"
+                            android:fontFamily="@font/jakarta"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout5"
+                        android:layout_below="@id/layout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="12dp"
+                        android:background="@drawable/clean_border2">
+
+                        <ImageView
+                            android:id="@+id/note"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/noteicon"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="12dp"/>
+
+                        <TextView
+                            android:id="@+id/txtNote"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_toRightOf="@+id/note"
+                            android:layout_marginTop="24dp"
+                            android:textSize="18dp"
+                            android:text="Note:"
+                            android:fontFamily="@font/jakarta"
+                            />
+
+                        <TextView
+                            android:id="@+id/noteDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/txtNote"
+                            android:layout_marginLeft="14dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="24dp"
+                            android:layout_toRightOf="@+id/note"
+                            android:text="Note Description"
+                            android:textSize="18dp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/jakarta"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/layout6"
+                        android:layout_below="@id/layout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/clean_border2"
+                        android:layout_marginTop="12dp">
+
+
+                        <ImageView
+                            android:id="@+id/birthicon"
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/birthicon"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginBottom="20dp"
+                            android:layout_marginLeft="12dp"/>
+
+                        <TextView
+                            android:id="@+id/txtPregnancyProcess"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_toRightOf="@+id/birthicon"
+                            android:layout_marginTop="24dp"
+                            android:textSize="18dp"
+                            android:text="Pregnancy Process:"
+                            android:fontFamily="@font/jakarta"/>
+
+                        <TextView
+                            android:id="@+id/pregnancyProcessDescription"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_toRightOf="@+id/birthicon"
+                            android:layout_marginBottom="24dp"
+                            android:textStyle="bold"
+                            android:text="Pregnancy Description"
+                            android:textSize="18dp"
+                            android:layout_below="@+id/txtPregnancyProcess"
+                            android:fontFamily="@font/jakarta"/>
+
+
+                    </RelativeLayout>
+
+
+
+                    <Button
+                        android:id="@+id/btnViewDetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="View Details"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/layout6"
+                        android:textColor="@color/mainaccent"
+                        android:background="@drawable/round_back_mainprimary"
+                        android:fontFamily="@font/jakarta"
+                        android:layout_marginEnd="2dp" />
+
+                    <Button
+                        android:id="@+id/updateStatusButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:text="Update Status"
+                        android:textSize="14dp"
+                        android:textStyle="bold"
+                        android:layout_marginTop="5dp"
+                        android:layout_below="@+id/btnViewDetails"
+                        android:textColor="@color/mainaccent"
+                        android:background="@drawable/round_back_mainprimary"
+                        android:fontFamily="@font/jakarta" />
+
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <!-- Left CardView for pet_ID -->
+    <RelativeLayout
+        android:id="@+id/leftCardView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:visibility="invisible">
+
+        <!-- Layout for pet_ID -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/petIdValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="petid"
+                android:textColor="#333333" />
+
+
+
+            <TextView
+                android:id="@+id/petGenderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pet Gender:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/petGenderValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="gender"
+                android:textColor="#333333" />
+
+            <!-- Pet Category -->
+            <TextView
+                android:id="@+id/petCategoryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pet Category:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/petCategoryValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="categ"
+                android:textColor="#333333" />
+
+            <!-- Pet Breed -->
+            <TextView
+                android:id="@+id/petBreedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pet Breed:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/petBreedValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="breed"
+                android:textColor="#333333" />
+
+            <!-- Pet Age -->
+            <TextView
+                android:id="@+id/petAgeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pet Age:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/petAgeValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12"
+                android:textColor="#333333" />
+
+            <!-- Pet Weight -->
+            <TextView
+                android:id="@+id/petWeightTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pet Weight:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/petWeightValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="12kg"
+                android:textColor="#333333" />
+
+            <!-- Pet Color -->
+            <TextView
+                android:id="@+id/petColorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pet Color:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/petColorValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="yellow"
+                android:textColor="#333333" />
+
+            <!-- Pet Breedtype -->
+            <TextView
+                android:id="@+id/petBreedtypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pet Breedtype:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/petBreedtypeValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="purebred"
+                android:textColor="#333333" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <!-- Right CardView for liked_pet_ID -->
+    <RelativeLayout
+        android:id="@+id/rightCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        android:visibility="invisible">
+
+        <!-- Layout for liked_pet_ID -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/likedPetIdTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="liked_pet_ID: "
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/likedPetIdValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#333333" />
+
+            <TextView
+                android:id="@+id/likedPetGenderTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pet Gender:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/likedPetGenderValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#333333" />
+
+            <!-- Pet Category -->
+            <TextView
+                android:id="@+id/likedPetCategoryTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pet Category:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/likedPetCategoryValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#333333" />
+
+            <!-- Pet Breed -->
+            <TextView
+                android:id="@+id/likedPetBreedTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pet Breed:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/likedPetBreedValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#333333" />
+
+            <!-- Pet Age -->
+            <TextView
+                android:id="@+id/likedPetAgeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pet Age:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/likedPetAgeValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#333333" />
+
+            <!-- Pet Weight -->
+            <TextView
+                android:id="@+id/likedPetWeightTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pet Weight:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/likedPetWeightValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#333333" />
+
+            <!-- Pet Color -->
+            <TextView
+                android:id="@+id/likedPetColorTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pet Color:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/likedPetColorValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#333333" />
+
+            <!-- Pet Breedtype -->
+            <TextView
+                android:id="@+id/likedPetBreedtypeTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="Pet Breedtype:"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/likedPetBreedtypeValueTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textColor="#333333" />
+
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

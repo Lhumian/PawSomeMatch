@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mainsecondary">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainprimary"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_petname"
+            android:textSize="18dp"
+            android:textColor="@color/mainaccent"
+            android:layout_marginLeft="12dp"
+            android:textStyle="bold"
+            android:text="Pet Name"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/jakarta"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:id="@+id/breed"
+            android:textSize="16sp"
+            android:textColor="@color/mainaccent"
+            android:layout_toRightOf="@+id/txt_petname"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginBottom="8dp"
+            android:text="breed"
+            android:fontFamily="@font/jakarta"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/pesosign"
+            android:textSize="18dp"
+            android:layout_toLeftOf="@+id/price"
+            android:textStyle="bold"
+            android:text="₱"
+            android:textColor="@color/mainaccent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/jakarta"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:textSize="18dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:textStyle="bold"
+            android:text="Price"
+            android:textColor="@color/mainaccent"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:fontFamily="@font/jakarta"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="1dp"
+        android:layout_below="@+id/layout1">
+
+        <ImageView
+            android:id="@+id/browsePetImage"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sample2" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/layout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout2"
+        android:background="@color/mainprimary"
+        android:layout_marginTop="1dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txt_desc"
+            android:textSize="12sp"
+            android:textColor="@color/mainaccent"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginBottom="12dp"
+            android:text="description"
+            android:fontFamily="@font/jakarta"/>
+
+
+    </RelativeLayout>
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:id="@+id/txt_id"
+        android:gravity="center_vertical|center"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:background="@drawable/image_selling"
+        android:src="@drawable/person"
+        android:text="1"
+        android:visibility="invisible"/>
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:id="@+id/txt_species"
+        android:textColor="@color/mainsecondary"
+        android:textSize="20sp"
+        android:layout_marginLeft="10dp"
+        android:text=""
+        android:visibility="invisible"/>
+
+
+</RelativeLayout>

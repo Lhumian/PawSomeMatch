@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainprimary"
+    tools:context="com.petopia.loginsignup.PetRegister">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:elevation="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create Post"
+            android:textColor="@color/mainaccent"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:fontFamily="@font/jakarta"
+            android:textSize="16dp"
+            android:textStyle="bold">
+        </TextView>
+
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/beckbtn3"
+            android:padding="14dp">
+        </ImageView>
+
+        <Button
+            android:id="@+id/add_pet_Btn"
+            android:layout_width="70dp"
+            android:layout_height="32dp"
+            android:layout_marginRight="12dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/button_border"
+            android:text="Post"
+            android:textStyle="bold"
+            android:textColor="@color/mainaccent"
+            android:textSize="12dp"
+            android:fontFamily="@font/jakarta"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mainaccent"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:id="@+id/petname_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="24dp"
+                android:fontFamily="@font/jakarta"
+                android:text="Pet Name:"
+                android:textColor="@color/mainsecondary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/pet_name"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/post_border2"
+                android:cursorVisible="true"
+                android:fontFamily="@font/jakarta"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@color/mainsecondary"
+                android:textCursorDrawable="@drawable/cursor_indicator"/>
+
+            <TextView
+                android:id="@+id/species_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pet_name"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="15dp"
+                android:fontFamily="@font/jakarta"
+                android:text="Select Categories:"
+                android:textColor="@color/mainsecondary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/species_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_below="@id/species_textview"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/post_border2"
+                android:fontFamily="@font/jakarta"
+                android:padding="8dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/species_spinner"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/breed_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="12dp"
+                        android:fontFamily="@font/jakarta"
+                        android:text="Select Breed:"
+                        android:textColor="@color/mainsecondary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/breed_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@id/breed_textview"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/post_border2"
+                        android:fontFamily="@font/jakarta"
+                        android:padding="8dp" />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/purity_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/breed_spinner"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="24dp"
+                        android:fontFamily="@font/jakarta"
+                        android:text="Select Type:"
+                        android:textColor="@color/mainsecondary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/purity_spinner"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@id/purity_textview"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="24dp"
+                        android:background="@drawable/post_border2"
+                        android:entries="@array/purity"
+                        android:fontFamily="@font/jakarta"
+                        android:padding="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/date_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/breed_spinner"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginRight="24dp"
+                        android:fontFamily="@font/jakarta"
+                        android:text="Date of Birth:"
+                        android:textColor="@color/mainsecondary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/Age"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@id/date_textview"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="12dp"
+                        android:background="@drawable/post_border2"
+                        android:clickable="false"
+                        android:focusable="false"
+                        android:longClickable="false"
+                        android:cursorVisible="true"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/jakarta"
+                        android:padding="8dp"
+                        android:textColor="@color/mainsecondary"
+                        android:textColorHint="@color/mainsecondary"
+                        android:textCursorDrawable="@drawable/cursor_indicator" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <Button
+                        android:id="@+id/AgeBtn"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginRight="24dp"
+                        android:background="@drawable/button_border"
+                        android:fontFamily="@font/jakarta"
+                        android:text="Select Date"
+                        android:textColor="@color/mainaccent"
+                        android:textSize="14dp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/species_spinner"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/weight_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Color"
+                        android:layout_marginLeft="24dp"
+                        android:fontFamily="@font/jakarta"
+                        android:text="Weight:"
+                        android:textColor="@color/mainsecondary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/Weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="24dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@drawable/post_border2"
+                        android:cursorVisible="true"
+                        android:hint="Kilogram"
+                        android:drawablePadding="8dp"
+                        android:fontFamily="@font/jakarta"
+                        android:inputType="number"
+                        android:padding="8dp"
+                        android:textColor="@color/black"
+                        android:textColorHint="@color/mainsecondary"
+                        android:textCursorDrawable="@drawable/cursor_indicator" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/gender_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:fontFamily="@font/jakarta"
+                        android:text="Gender:"
+                        android:textColor="@color/mainsecondary"
+                        android:textSize="14sp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/gender"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@id/lastnameEt"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/post_border2"
+                        android:entries="@array/gender"
+                        android:fontFamily="@font/jakarta"
+                        android:padding="8dp"
+                        android:text="Select Gender"
+                        android:textColor="@color/mainsecondary"
+                        android:textCursorDrawable="@color/mainsecondary" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/color_textview"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/Color"
+                        android:fontFamily="@font/jakarta"
+                        android:text="Color:"
+                        android:textColor="@color/mainsecondary"
+                        android:textSize="14dp"
+                        android:textStyle="bold" />
+
+                    <Spinner
+                        android:id="@+id/Color"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_below="@id/breed_textview"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginRight="24dp"
+                        android:background="@drawable/post_border2"
+                        android:fontFamily="@font/jakarta"
+                        android:padding="8dp" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/vaccination_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/jakarta"
+                android:text="Vaccination Status:"
+                android:textColor="@color/mainsecondary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/vaccine"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/post_border2"
+                android:cursorVisible="true"
+                android:drawableLeft="@drawable/round_person"
+                android:drawablePadding="8dp"
+                android:entries="@array/vaccine"
+                android:fontFamily="@font/jakarta"
+                android:hint="Vaccine Status"
+                android:padding="8dp"
+                android:text="Select Vaccine Status"
+                android:textColor="@color/black"
+                android:textCursorDrawable="@color/black" />
+
+            <TextView
+                android:id="@+id/price_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/jakarta"
+                android:text="Price:"
+                android:textColor="@color/mainsecondary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/Price"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/post_border2"
+                android:cursorVisible="true"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/jakarta"
+                android:inputType="number"
+                android:padding="8dp"
+                android:textColor="@color/mainsecondary"
+                android:textCursorDrawable="@drawable/cursor_indicator" />
+
+            <TextView
+                android:id="@+id/description_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/jakarta"
+                android:text="Description:"
+                android:textColor="@color/mainsecondary"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+
+            <EditText
+                android:id="@+id/Description"
+                android:layout_width="match_parent"
+                android:layout_height="93dp"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="24dp"
+                android:background="@drawable/post_border2"
+                android:cursorVisible="true"
+                android:drawablePadding="8dp"
+                android:fontFamily="@font/jakarta"
+                android:inputType="text"
+                android:padding="8dp"
+                android:textColor="@color/mainsecondary"
+                android:textCursorDrawable="@drawable/cursor_indicator"
+                android:gravity="top" />
+
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pet Image"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/jakarta"
+                android:textColor="@color/mainsecondary"
+                android:textSize="14sp"
+                android:textStyle="bold">
+
+            </TextView>
+            <ImageView
+                android:id="@+id/browsePetImage"
+                android:layout_width="350dp"
+                android:layout_height="200dp"
+                android:layout_marginTop="5dp"
+                android:src="@drawable/addimg"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp">
+            </ImageView>
+
+            <RelativeLayout
+                android:id="@+id/btnUploadImage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp">
+
+                <TextView
+                    android:id="@+id/addphoto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Pet Photo"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="12dp"
+                    android:fontFamily="@font/jakarta"
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="14sp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/addpet2"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/addphoto"
+                    android:layout_marginLeft="5dp"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewAddressActivity"
+    android:background="@color/mainsecondary">
+
+    <RelativeLayout
+        android:id="@+id/layout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainprimary"
+        android:layout_marginBottom="2dp">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/beckbtn3"
+            android:padding="14dp" />
+
+        <TextView
+            android:id="@+id/txtOrderSummaryDisplay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Order Summary"
+            android:textColor="@color/mainaccent"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:fontFamily="@font/jakarta"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/layout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/layout1"
+        android:background="@color/mainaccent">
+
+        <TextView
+            android:id="@+id/txtContact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:text="Contact:"
+            android:fontFamily="@font/jakarta"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:textColor="@color/mainsecondary"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Full Name"
+            android:fontFamily="@font/jakarta"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtContact" />
+
+        <EditText
+            android:id="@+id/etPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/mainsecondary"
+            android:ems="10"
+            android:inputType="phone"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/etName"
+            android:hint="Phone Number"
+            android:fontFamily="@font/jakarta"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="2dp"
+        android:background="@color/mainaccent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/layout2">
+
+        <TextView
+            android:id="@+id/txtAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="25dp"
+            android:text="Address:"
+            android:textColor="@color/mainsecondary"
+            android:layout_alignParentStart="true" />
+
+        <TextView
+            android:id="@+id/txtCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:text="City:"
+            android:textColor="@color/mainsecondary"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtAddress" />
+
+        <Spinner
+            android:id="@+id/spinnerCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            android:entries="@array/city"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtCity" />
+
+        <TextView
+            android:id="@+id/txtBarangay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="18dp"
+            android:text="Barangay:"
+            android:textColor="@color/mainsecondary"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spinnerCity" />
+
+        <Spinner
+            android:id="@+id/spinnerBarangay"
+            android:layout_width="409dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            android:entries="@array/barangay"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/txtBarangay" />
+
+        <EditText
+            android:id="@+id/etStreet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="10dp"
+            android:ems="10"
+            android:inputType="text"
+            android:hint="Purok, Street Name, Building"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/spinnerBarangay" />
+
+        <Button
+            android:id="@+id/btnSubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="24dp"
+            android:background="@drawable/round_back_main"
+            android:text="Submit"
+            android:textColor="@color/mainaccent"
+            android:layout_below="@+id/etStreet" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

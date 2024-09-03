@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".settings.FAQ"
+    android:background="@color/mainaccent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Settings"
+        android:background="@color/mainaccent">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/mainprimary"
+                android:elevation="20dp">
+
+
+                <ImageView
+                    android:id="@+id/backBtn"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/beckbtn3"
+                    android:padding="14dp"/>
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:fontFamily="@font/jakarta"
+                    android:text="About Us"
+                    android:textColor="@color/mainaccent"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout1"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp">
+
+                <TextView
+                    android:id="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="PawsomeMatch"
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/jakarta"/>
+
+                <TextView
+                    android:layout_below="@+id/id"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="At PawsomeMatch, we're passionate about bringing pet lovers together and fostering responsible pet care and breeding practices. Our app is designed to create a community where pet enthusiasts can connect, find suitable breeding matches, and discover pets available for sale or adoption."
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/jakarta"
+                    android:lineSpacingMultiplier="1.5"
+                    android:lineSpacingExtra="0dp"
+                    />
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_below="@+id/layout2">
+
+                <TextView
+                    android:id="@+id/id1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Our Mission"
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/jakarta"/>
+
+                <TextView
+                    android:layout_below="@+id/id1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Our mission is to provide a platform that not only matches pets for breeding but also promotes ethical breeding, responsible pet ownership, and pet welfare. We believe that every pet deserves a loving home, and we're dedicated to facilitating those connections."
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/jakarta"
+                    android:lineSpacingMultiplier="1.5"
+                    android:lineSpacingExtra="0dp"
+                    android:textAlignment="textStart"
+                    />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout3"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp">
+
+                <TextView
+                    android:id="@+id/id2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="14dp"
+                    android:text="Why Choose PawsomeMatch?"
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="24sp"
+                    android:fontFamily="@font/jakarta"
+                    />
+
+                <TextView
+                    android:id="@+id/od2"
+                    android:layout_below="@+id/id2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Free and Inclusive: "
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"/>
+
+                <TextView
+                    android:layout_below="@+id/od2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="PawsomeMatch is completely free to use, making it accessible to everyone without any premium options."
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/jakarta"
+                    android:lineSpacingMultiplier="1.5"
+                    android:lineSpacingExtra="0dp"
+                    android:textAlignment="textStart"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout4"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp">
+
+                <TextView
+                    android:id="@+id/od3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Safe and Secure: "
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"/>
+
+                <TextView
+                    android:layout_below="@+id/od3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="We prioritize user privacy and data security, ensuring a safe environment for all our users."
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/jakarta"
+                    android:lineSpacingMultiplier="1.5"
+                    android:lineSpacingExtra="0dp"
+                    android:textAlignment="textStart"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout5"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp">
+
+                <TextView
+                    android:id="@+id/od4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Community Support: "
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"/>
+
+                <TextView
+                    android:layout_below="@+id/od4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Our community forum allows users to share advice, tips, and experiences, promoting a supportive pet-loving community."
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/jakarta"
+                    android:lineSpacingMultiplier="1.5"
+                    android:lineSpacingExtra="0dp"
+                    android:textAlignment="textStart"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/layout7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout6"
+                android:layout_marginLeft="24dp"
+                android:layout_marginRight="24dp"
+                android:layout_marginBottom="12dp">
+
+                <TextView
+                    android:id="@+id/od5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:text="Adoption-Friendly: "
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    android:fontFamily="@font/jakarta"
+                    />
+
+                <TextView
+                    android:layout_below="@+id/od5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text=" We welcome pet adoption listings, supporting the well-being of pets in need of forever homes."
+                    android:textColor="@color/mainsecondary"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/jakarta"
+                    android:lineSpacingMultiplier="1.5"
+                    android:lineSpacingExtra="0dp"
+                    android:textAlignment="textStart"/>
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

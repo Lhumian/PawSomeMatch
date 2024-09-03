@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
+    android:background="@color/mainaccent">
+
+
+    <RelativeLayout
+        android:id="@+id/named"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainaccent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Confirm Logout"
+            android:textColor="@color/mainprimary"
+            android:textSize="26dp"
+            android:fontFamily="@font/jakarta"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            ></TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainaccent"
+        android:layout_below="@+id/named">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Are you sure you want to logout?"
+            android:textColor="@color/mainsecondary"
+            android:fontFamily="@font/jakarta"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            ></TextView>
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="1dp">
+
+        <Button
+            android:id="@+id/logoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:textColor="@color/mainaccent"
+            android:textStyle="bold"
+            android:background="@color/red_400"
+            android:fontFamily="@font/jakarta"
+            android:layout_marginRight="32dp"
+            android:layout_marginBottom="1dp"
+            android:layout_centerHorizontal="true"
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/log"
+        android:layout_width="match_parent"
+        android:layout_height="70dp">
+        <Button
+            android:id="@+id/cancelBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/mainaccent"
+            android:textStyle="bold"
+            android:background="@color/mainprimary"
+            android:layout_marginLeft="32dp"
+            android:layout_marginBottom="1dp"
+            android:layout_centerHorizontal="true"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

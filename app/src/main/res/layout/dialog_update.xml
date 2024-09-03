@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="120dp"
+    android:gravity="center"
+    android:layout_centerHorizontal="true"
+    android:background="@color/mainaccent">
+
+    <RelativeLayout
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mainaccent">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you want to update your sale status?"
+            android:textColor="@color/mainsecondary"
+            android:fontFamily="@font/jakarta"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginTop="5dp"
+            ></TextView>
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name"
+        android:layout_marginTop="1dp"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/updateButton"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:text="Update"
+            android:textColor="@color/mainaccent"
+            android:textStyle="bold"
+            android:background="@color/mainprimary"
+            android:fontFamily="@font/jakarta"
+            android:layout_marginRight="1dp"
+            android:layout_marginBottom="1dp"
+            />
+
+        <Button
+            android:id="@+id/cancelButton"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="@color/mainaccent"
+            android:textStyle="bold"
+            android:background="@color/red_400"
+            android:layout_marginLeft="1dp"
+            android:layout_marginBottom="1dp"
+            />
+    </LinearLayout>
+
+</RelativeLayout>

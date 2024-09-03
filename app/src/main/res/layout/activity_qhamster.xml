@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".qCat"
+    android:background="@color/mainaccent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/jakarta"
+                android:text="Top 10 Most Popular Hamster Breeds"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="50dp"
+                android:textColor="@color/mainsecondary"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/petname_textview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="@font/jakarta"
+                android:text="Introduction"
+                android:textColor="@color/mainsecondary"
+                android:textSize="16dp"/>
+
+            <TextView
+                android:id="@+id/intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/jakarta"
+                android:text="Considering welcoming a tiny, charming hamster into your home? Hamsters can be delightful companions with their cute antics and lovable personalities. They are low-maintenance, easy to train, and enjoy grooming themselves, offering their special kind of companionship. In a nutshell, hamsters are hamsterrific! There are several hamster species, each with its own endearing traits. Here are 10 of the most popular ones to help you find your new pint-sized buddy!"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                android:lineSpacingMultiplier="1.3"
+                android:textAlignment="textStart" />
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/hamsterfq1"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/hamsterfq2"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:src="@drawable/hamsterfq3"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:src="@drawable/hamsterfq4"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/hamsterfq5"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="260dp"
+                android:src="@drawable/hamsterfq6"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/hamsterfq7"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/hamsterfq8"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/hamsterfq9"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"/>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="220dp"
+                android:src="@drawable/hamsterfq10"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="24dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <FrameLayout
+        android:id="@+id/layout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/backBtn"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/beckbtn"
+            android:padding="14dp" />
+
+    </FrameLayout>
+</RelativeLayout>
